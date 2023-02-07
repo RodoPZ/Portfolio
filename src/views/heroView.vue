@@ -51,7 +51,6 @@ import buttonComponent from "@/components/buttonComponent.vue";
 
 <style scoped lang="scss">
 .hero {
-  margin: 0 12px;
   display: flex;
   justify-content: center;
   flex-direction: column;
