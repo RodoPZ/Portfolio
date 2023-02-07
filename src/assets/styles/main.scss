@@ -1,0 +1,61 @@
+:root {
+  font-size: 62.5%;
+  background-color: $background-black;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+body,
+#app {
+  margin: 0;
+  height: 100%;
+}
+
+.H1-D {
+  font-size: 3.5rem;
+  color: $background-light;
+}
+
+.H2-D {
+  font-size: 2.8rem;
+  color: $background-light;
+}
+
+.H3-D {
+  font-size: 2.4rem;
+  color: $background-light;
+}
+
+.Pr-D {
+  font-size: 1.8rem;
+  color: $background-light;
+}
+
+.Ps-D {
+  font-size: 1.6rem;
+  color: $background-light;
+}
+.H1-M {
+  font-size: 2.5rem;
+  color: $background-light;
+}
+
+.H2-M {
+  font-size: 2rem;
+  color: $background-light;
+}
+
+.H3-M {
+  font-size: 1.8rem;
+  color: $background-light;
+}
+
+.Pr-M {
+  font-size: 1.6rem;
+  color: $background-light;
+}
+
+.Ps-M {
+  font-size: 1.4rem;
+  margin: 0px;
+  color: $background-light;
+}
