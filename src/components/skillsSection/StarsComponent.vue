@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import SvgIcon from "@jamescoyle/vue-icon";
-import { mdiStar } from "@mdi/js";
-import { mdiStarOutline } from "@mdi/js";
+import { reactive, type StyleValue } from "vue";
 const props = defineProps(["stars"]);
 const levels = ["Basic", "Intermediate", "Advanced"];
-let starsIndex: Array<string> = [];
+let styleObject: Array<StyleValue> = reactive([]);
 for (let index = 1; index <= 3; index++) {
   if (index <= props.stars) {
-    starsIndex.push(mdiStar);
+    styleObject.push({
+      ["font-variation-settings"]: '"FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48',
+    });
   } else {
-    starsIndex.push(mdiStarOutline);
+    styleObject.push({
+      ["font-variation-settings"]: '"FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48',
+    });
   }
 }
 </script>
@@ -18,12 +20,14 @@ for (let index = 1; index <= 3; index++) {
   <div class="stars">
     <p class="Ps-M stars__title">{{ levels[stars - 1] }}</p>
     <div class="stars__container">
-      <svg-icon
+      <span
         v-for="i in 3"
         :key="i"
-        type="mdi"
-        :path="starsIndex[i - 1]"
-      ></svg-icon>
+        :style="styleObject[i - 1]"
+        class="material-symbols-outlined"
+      >
+        star
+      </span>
     </div>
   </div>
 </template>

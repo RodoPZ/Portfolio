@@ -1,15 +1,26 @@
 <script setup lang="ts">
-import navbarView from "./views/navbarView.vue";
-import heroView from "./views/heroView.vue";
-import BannerComponent from "./components/bannerComponent.vue";
-import SkillsView from "./views/skillsView.vue";
+import NavbarView from "./views/NavbarView.vue";
+import HeroView from "./views/HeroView.vue";
+import BannerComponent from "./components/BannerComponent.vue";
+import SkillsView from "./views/SkillsView.vue";
+import ProjectsView from "./views/ProjectsView.vue";
 </script>
 
 <template>
-  <navbarView />
-  <heroView />
-  <BannerComponent />
-  <SkillsView />
+  <nav>
+    <NavbarView />
+  </nav>
+  <main>
+    <HeroView />
+    <BannerComponent :text="'Skills'" />
+    <SkillsView />
+    <BannerComponent :text="'Projects'" />
+    <ProjectsView />
+  </main>
 </template>
 
-<style></style>
+<style>
+main {
+  margin: 0 20px;
+}
+</style>

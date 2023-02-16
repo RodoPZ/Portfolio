@@ -1,16 +1,16 @@
-<script setup lang="ts">
-import SvgIcon from "@jamescoyle/vue-icon";
-import { mdiMenu } from "@mdi/js";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="navbar">
     <p class="navbar__title Pr-M">&lt;RodoPZ/></p>
-    <svg-icon type="mdi" :path="mdiMenu"></svg-icon>
+    <span class="material-symbols-outlined"> menu </span>
   </div>
 </template>
 
 <style scoped lang="scss">
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
 .navbar {
   position: sticky;
   z-index: 3;

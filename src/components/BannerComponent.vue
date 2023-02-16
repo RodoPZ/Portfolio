@@ -1,15 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps(["text"]);
+</script>
 
 <template>
   <div class="crt">
     <p class="crt__item crt__Arrow">></p>
-    <p class="crt__item crt__Text">Skills</p>
+    <p class="crt__item crt__Text">{{ text }}</p>
     <p class="crt__item crt__Line">_</p>
   </div>
 </template>
 
 <style scoped lang="scss">
 .crt {
+  margin: 12px 0;
   display: flex;
   align-items: center;
   justify-content: center;

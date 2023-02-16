@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import StarsComponent from "./starsComponent.vue";
+import StarsComponent from "./StarsComponent.vue";
 
 defineProps(["list", "title"]);
 </script>
@@ -21,7 +21,6 @@ defineProps(["list", "title"]);
 <style lang="scss">
 .languageSkill {
   display: flex;
-  margin: 10px 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;

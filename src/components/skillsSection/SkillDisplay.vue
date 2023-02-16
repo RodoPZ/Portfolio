@@ -6,11 +6,8 @@ const props = defineProps(["list", "title"]);
   <h2 class="skillList__title H2-M">{{ title }}</h2>
   <div class="skillList">
     <div v-for="(item, index) in list" :key="index" class="skillDisplay">
-      <img
-        :src="'src/assets/logos/' + item + '.svg'"
-        :alt="item.name + ' logo'"
-      />
-      <p class="Ps-M skillDisplay__text">{{ item.name }}</p>
+      <img :src="'src/assets/logos/' + item + '.svg'" :alt="item + ' logo'" />
+      <p class="Ps-M skillDisplay__text">{{ item }}</p>
     </div>
   </div>
 </template>
