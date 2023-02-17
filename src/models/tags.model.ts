@@ -7,7 +7,9 @@ export enum tagNames {
   Redux = "Redux",
   TypeScript = "TypeScript",
   Sass = "Sass",
-  API = "API_REST",
+  API = "API REST",
+  GraphQL = "GraphQL API",
+  Boostrap = "Boostrap",
 }
 
 export const tags = {
@@ -55,5 +57,15 @@ export const tags = {
     backgroundColor: "#79D29D",
     color: "#000000",
     text: tagNames.API,
+  },
+  [tagNames.GraphQL]: {
+    backgroundColor: "#971C6E",
+    color: "#FFFFFF",
+    text: tagNames.GraphQL,
+  },
+  [tagNames.Boostrap]: {
+    backgroundColor: "#7802DE",
+    color: "#FFFFFF",
+    text: tagNames.Boostrap,
   },
 };

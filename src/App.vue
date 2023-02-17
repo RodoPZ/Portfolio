@@ -4,6 +4,8 @@ import HeroView from "./views/HeroView.vue";
 import BannerComponent from "./components/BannerComponent.vue";
 import SkillsView from "./views/SkillsView.vue";
 import ProjectsView from "./views/ProjectsView.vue";
+import ContactMeView from "./views/ContactMeView.vue";
+import FooterView from "./views/FooterView.vue";
 </script>
 
 <template>
@@ -16,7 +18,12 @@ import ProjectsView from "./views/ProjectsView.vue";
     <SkillsView />
     <BannerComponent :text="'Projects'" />
     <ProjectsView />
+    <BannerComponent :text="'Contact me!'" />
+    <ContactMeView />
   </main>
+  <footer>
+    <FooterView />
+  </footer>
 </template>
 
 <style>

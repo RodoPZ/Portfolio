@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import InputText from "@/components/InputText.vue";
+import InputText from "@/components/heroSection/documentTitleComponent.vue";
 import buttonComponent from "@/components/ButtonComponent.vue";
 </script>
 

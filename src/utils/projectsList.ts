@@ -49,4 +49,138 @@ export const projectList = [
       },
     ],
   },
+  {
+    name: { En: "Petgram", Es: null },
+    text: {
+      En: `Instagram clone web app for pets with which I learned to use technologies such as graphql queries, JSON web tokens, Styled-components and session persistence, as well as practicing my React skills.
+      Developed using React, bundled using Webpack and deployed to Github Pages.
+      Uses a GraphQL API managed with Apollo Client and the session and data are persistent.`,
+      Es: null,
+    },
+    tags: [tagNames.React, tagNames.Sass, tagNames.Redux, tagNames.GraphQL],
+    links: [
+      {
+        name: IconButtons.Figma,
+        link: null,
+      },
+      {
+        name: IconButtons.Github,
+        link: "https://github.com/RodoPZ/Petgram",
+      },
+      {
+        name: IconButtons.Web,
+        link: "https://rodopz.github.io/Petgram/",
+      },
+    ],
+  },
+  {
+    name: { En: "MovieAPI", Es: null },
+    text: {
+      En: ``,
+      Es: null,
+    },
+    tags: [tagNames.Figma, tagNames.TypeScript],
+    links: [
+      {
+        name: IconButtons.Figma,
+        link: "https://www.figma.com/file/MoxZGZpt0YgcA4Jy6h5Y0q/MovieAPI?node-id=232%3A785&t=bHedq500i0zuArBt-1",
+      },
+      {
+        name: IconButtons.Github,
+        link: "https://github.com/RodoPZ/MovieAPI",
+      },
+      {
+        name: IconButtons.Web,
+        link: "https://rodopz-movieapi.netlify.app/",
+      },
+    ],
+  },
+  {
+    name: { En: "CashFlow", Es: null },
+    text: {
+      En: ``,
+      Es: null,
+    },
+    tags: [tagNames.Vue, tagNames.TypeScript],
+    links: [
+      {
+        name: IconButtons.Figma,
+        link: "null",
+      },
+      {
+        name: IconButtons.Github,
+        link: "https://github.com/RodoPZ/CashFlow",
+      },
+      {
+        name: IconButtons.Web,
+        link: "https://rodopz-cashflow.netlify.app/",
+      },
+    ],
+  },
+  {
+    name: { En: "TODO React", Es: null },
+    text: {
+      En: ``,
+      Es: null,
+    },
+    tags: [tagNames.React],
+    links: [
+      {
+        name: IconButtons.Figma,
+        link: "null",
+      },
+      {
+        name: IconButtons.Github,
+        link: "https://github.com/RodoPZ/SPA-RickAndMorty",
+      },
+      {
+        name: IconButtons.Web,
+        link: "https://rodopz.github.io/SPA-RickAndMorty/",
+      },
+    ],
+  },
+  {
+    name: { En: "Platzi-conf", Es: null },
+    text: {
+      En: ``,
+      Es: null,
+    },
+    tags: [tagNames.Boostrap, tagNames.Sass],
+    links: [
+      {
+        name: IconButtons.Figma,
+        link: "null",
+      },
+      {
+        name: IconButtons.Github,
+        link: "https://github.com/RodoPZ/Platzi-conf",
+      },
+      {
+        name: IconButtons.Web,
+        link: "https://rodopz.github.io/Platzi-conf/",
+      },
+    ],
+  },
+  {
+    name: { En: "Grid css", Es: null },
+    text: {
+      En: ``,
+      Es: null,
+    },
+    tags: [tagNames.Boostrap, tagNames.Sass],
+    links: [
+      {
+        name: IconButtons.Figma,
+        link: "null",
+      },
+      {
+        name: IconButtons.Github,
+        link: "https://github.com/RodoPZ/grid-css-example",
+      },
+      {
+        name: IconButtons.Web,
+        link: "https://rodopz.github.io/grid-css-example/",
+      },
+    ],
+  },
 ];

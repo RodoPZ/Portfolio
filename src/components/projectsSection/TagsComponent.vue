@@ -18,10 +18,7 @@ defineProps<{
 .tag {
   width: fit-content;
   border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 8px;
-  gap: 10px;
+  box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 </style>
