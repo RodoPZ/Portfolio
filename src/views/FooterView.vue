@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import CodepenIcon from "@/assets/icons/CodepenIcon.vue";
-import GithubIcon from "@/assets/icons/GithubIcon.vue";
-import LinkedInIcon from "@/assets/icons/LinkedInIcon.vue";
-import MailIcon from "@/assets/icons/MailIcon.vue";
+import SocialLinksComponent from "@/components/SocialLinksComponent.vue";
 </script>
 
 <template>
@@ -11,12 +8,7 @@ import MailIcon from "@/assets/icons/MailIcon.vue";
     <h3 class="H3-M footer__subtitle">Front Developer</h3>
     <div class="footer__divider"></div>
     <p class="Pr-M">Designed and built by RodoPZ</p>
-    <div class="footer__links">
-      <LinkedInIcon class="footer__link" :color="'#EDF2F4'" />
-      <MailIcon class="footer__link" :color="'#EDF2F4'" />
-      <GithubIcon class="footer__link" :color="'#EDF2F4'" />
-      <CodepenIcon class="footer__link" :color="'#EDF2F4'" />
-    </div>
+    <SocialLinksComponent :size="'24px'" />
   </div>
 </template>
 
@@ -35,14 +27,6 @@ import MailIcon from "@/assets/icons/MailIcon.vue";
     background-color: $background-light-1;
     width: 100%;
     height: 2px;
-  }
-  &__links {
-    display: flex;
-    gap: 8px;
-  }
-  &__link {
-    width: 20px;
-    height: 20px;
   }
 }
 </style>

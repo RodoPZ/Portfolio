@@ -11,6 +11,8 @@
   width: fit-content;
   background-color: transparent;
   border: 2px solid $background-light;
+  border-radius: 4px;
+  padding: 4px 8px;
   &__container {
     display: flex;
     justify-content: center;

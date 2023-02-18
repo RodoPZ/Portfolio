@@ -9,17 +9,27 @@ import FooterView from "./views/FooterView.vue";
 </script>
 
 <template>
-  <nav>
-    <NavbarView />
-  </nav>
+  <header>
+    <nav>
+      <NavbarView />
+    </nav>
+  </header>
   <main>
-    <HeroView />
-    <BannerComponent :text="'Skills'" />
-    <SkillsView />
-    <BannerComponent :text="'Projects'" />
-    <ProjectsView />
-    <BannerComponent :text="'Contact me!'" />
-    <ContactMeView />
+    <section>
+      <HeroView />
+    </section>
+    <section>
+      <BannerComponent :text="'Skills'" />
+      <SkillsView />
+    </section>
+    <section>
+      <BannerComponent :text="'Projects'" />
+      <ProjectsView />
+    </section>
+    <section>
+      <BannerComponent :text="'Contact me!'" />
+      <ContactMeView />
+    </section>
   </main>
   <footer>
     <FooterView />

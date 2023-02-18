@@ -12,7 +12,11 @@ defineProps<{
 <template>
   <a v-if="link != null" :href="link" class="logoIcon">
     <FigmaIcon v-if="text == 'Figma'" :color="'#EDF2F4'" />
-    <GithubIcon v-else-if="text == 'Github'" :color="'#EDF2F4'" />
+    <GithubIcon
+      v-else-if="text == 'Github'"
+      :color="'#EDF2F4'"
+      :size="'18px'"
+    />
     <WebIcon v-else-if="text == 'Web'" :color="'#EDF2F4'" />
     <p class="Ps-M logoIcon__text">{{ text }}</p>
   </a>

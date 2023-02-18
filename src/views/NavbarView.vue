@@ -1,19 +1,35 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import NavLinksComponent from "@/components/NavLinksComponent.vue";
+import MobileMenuView from "./MobileMenuView.vue";
+</script>
 
 <template>
   <div class="navbar">
-    <p class="navbar__title Pr-M">&lt;RodoPZ/></p>
-    <span class="material-symbols-outlined"> menu </span>
+    <a href="/" class="navbar__title Pr-M">&lt;RodoPZ/></a>
+    <div class="desktopMenu">
+      <NavLinksComponent />
+    </div>
+    <MobileMenuView class="mobileMenu" />
   </div>
 </template>
 
 <style scoped lang="scss">
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+.mobileMenu {
+  display: none;
 }
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .navbar {
-  position: sticky;
-  z-index: 3;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0px 20px;
   background-color: $background-black;
   height: 64px;
   color: $background-light;
@@ -21,9 +37,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
   &__title {
+    text-decoration: none;
     font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileMenu {
+    display: block;
+  }
+  .desktopMenu {
+    display: none;
   }
 }
 </style>

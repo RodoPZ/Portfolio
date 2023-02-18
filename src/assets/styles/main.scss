@@ -9,31 +9,6 @@ body,
   margin: 0;
   height: 100%;
 }
-
-.H1-D {
-  font-size: 3.5rem;
-  color: $background-light;
-}
-
-.H2-D {
-  font-size: 2.8rem;
-  color: $background-light;
-}
-
-.H3-D {
-  font-size: 2.4rem;
-  color: $background-light;
-}
-
-.Pr-D {
-  font-size: 1.8rem;
-  color: $background-light;
-}
-
-.Ps-D {
-  font-size: 1.6rem;
-  color: $background-light;
-}
 .H1-M {
   font-size: 2.5rem;
   color: $background-light;
@@ -63,4 +38,22 @@ body,
   font-size: 1.4rem;
   margin: 0px;
   color: $background-light;
+}
+
+@media (min-width: 768px) {
+  .Ps-M {
+    font-size: 1.6rem;
+  }
+  .Pr-M {
+    font-size: 1.8rem;
+  }
+  .H3-M {
+    font-size: 2.4rem;
+  }
+  .H2-M {
+    font-size: 2.8rem;
+  }
+  .H1-M {
+    font-size: 3.5rem;
+  }
 }

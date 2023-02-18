@@ -1,10 +1,10 @@
 <script setup lang="ts">
-defineProps(["color"]);
+defineProps(["color", "size"]);
 </script>
 <template>
   <svg
-    width="inherit"
-    height="inherit"
+    :width="size"
+    :height="size"
     viewBox="0 0 21 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
