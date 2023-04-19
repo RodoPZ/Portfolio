@@ -2,18 +2,20 @@
 import CardComponent from "@/components/projectsSection/CardComponent.vue";
 import TagsComponent from "@/components/projectsSection/TagsComponent.vue";
 import { tagNames } from "@/models/tags.model";
+import BannerComponent from "@/components/BannerComponent.vue";
 import { projectList } from "@/utils/projectsList";
 </script>
 
 <template>
   <div class="projects">
-    <div class="selector">
+    <BannerComponent :text="'Projects'" />
+    <!-- <div class="selector">
       <TagsComponent
         v-for="(item, index) in tagNames"
         :key="index"
         :text="item"
       />
-    </div>
+    </div> -->
     <CardComponent
       v-for="(item, index) in projectList"
       :key="index"
@@ -29,14 +31,13 @@ import { projectList } from "@/utils/projectsList";
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 .selector {
   align-items: center;
   color: $background-light;
   border-radius: 8px;
   background-color: $background-black-1;
-  width: calc(100vw - 40px - 16px);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

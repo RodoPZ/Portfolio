@@ -11,24 +11,28 @@ defineProps(["list", "title"]);
       :src="'src/assets/logos/' + item.name + '.svg'"
       :alt="item.name + ' logo'"
     />
-    <p class="Pr-M">{{ item.name }}</p>
+    <p class="Pr-M languageSkill__text">{{ item.name }}</p>
     <div>
       <StarsComponent :stars="item.stars" />
     </div>
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .languageSkill {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
   padding: 8px;
   border-radius: 8px;
   background-color: #3e4754;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   &__title {
     text-align: center;
+  }
+  &__text {
+    margin: auto;
   }
 }
 </style>

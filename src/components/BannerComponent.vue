@@ -12,7 +12,6 @@ defineProps(["text"]);
 
 <style scoped lang="scss">
 .crt {
-  margin: 12px 0;
   display: flex;
   align-items: center;
   justify-content: center;

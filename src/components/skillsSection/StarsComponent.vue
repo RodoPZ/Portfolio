@@ -36,18 +36,20 @@ for (let index = 1; index <= 3; index++) {
 .stars {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
+  width: fit-content;
+  margin-left: auto;
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 5px;
     color: $primary-dark;
   }
   &__title {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
     width: 100%;
     text-align: right;
   }

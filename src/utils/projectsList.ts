@@ -57,7 +57,7 @@ export const projectList = [
       Uses a GraphQL API managed with Apollo Client and the session and data are persistent.`,
       Es: null,
     },
-    tags: [tagNames.React, tagNames.Sass, tagNames.Redux, tagNames.GraphQL],
+    tags: [tagNames.React, tagNames.Sass, tagNames.Redux],
     links: [
       {
         name: IconButtons.Figma,

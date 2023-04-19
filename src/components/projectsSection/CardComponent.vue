@@ -42,7 +42,7 @@ defineProps(["title", "text", "tags", "links"]);
   &__text {
     text-align: justify;
     margin-bottom: 4px;
-    height: 150px;
+    height: 250px;
     overflow: scroll;
     white-space: pre-line;
   }

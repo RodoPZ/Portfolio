@@ -6,7 +6,11 @@ const props = defineProps(["list", "title"]);
   <h2 class="skillList__title H2-M">{{ title }}</h2>
   <div class="skillList">
     <div v-for="(item, index) in list" :key="index" class="skillDisplay">
-      <img :src="'src/assets/logos/' + item + '.svg'" :alt="item + ' logo'" />
+      <img
+        class="skillDisplay__img"
+        :src="'src/assets/logos/' + item + '.svg'"
+        :alt="item + ' logo'"
+      />
       <p class="Ps-M skillDisplay__text">{{ item }}</p>
     </div>
   </div>
@@ -17,7 +21,8 @@ const props = defineProps(["list", "title"]);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
+
   &__title {
     text-align: center;
   }
@@ -30,6 +35,13 @@ const props = defineProps(["list", "title"]);
   width: 85px;
   height: 80px;
   justify-content: center;
-  gap: 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  &__img {
+    width: 35px;
+    height: 40px;
+  }
+  &__text {
+    margin: 0;
+  }
 }
 </style>

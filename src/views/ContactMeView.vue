@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BannerComponent from "@/components/BannerComponent.vue";
+</script>
 
 <template>
   <div class="form">
+    <BannerComponent :text="'Contact me!'" />
     <p class="form__text Pr-M">
       Hey there. Thanks for checking out my portfolio. If you have any
       questions, suggestions or want to get in touch, feel free to shoot me an
@@ -54,14 +57,15 @@
 
 <style scoped lang="scss">
 .form {
-  display: grid;
-  grid-template-rows: auto repeat(3, auto) 3fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   &__text {
     text-align: justify;
+    margin: 0px;
   }
   &__section {
     display: flex;
-    margin-top: 12px;
     flex-direction: column;
     gap: 4px;
   }
@@ -96,7 +100,6 @@
   }
   &__button {
     background-color: transparent;
-    margin: 24px auto;
     width: 100%;
     box-sizing: border-box;
     padding: 12px 8px;

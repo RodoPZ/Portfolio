@@ -37,5 +37,8 @@ defineProps<{
   &__img {
     color: $background-light;
   }
+  &__text {
+    margin: 0;
+  }
 }
 </style>

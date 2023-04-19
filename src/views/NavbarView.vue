@@ -9,7 +9,7 @@ import MobileMenuView from "./MobileMenuView.vue";
     <div class="desktopMenu">
       <NavLinksComponent />
     </div>
-    <MobileMenuView class="mobileMenu" />
+    <!-- <MobileMenuView class="mobileMenu" /> -->
   </div>
 </template>
 

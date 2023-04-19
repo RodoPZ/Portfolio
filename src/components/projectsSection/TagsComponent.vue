@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div class="tag" :style="{ background: tags[text].backgroundColor }">
-    <p class="Ps-M" :style="{ color: tags[text].color }">
+    <p class="Ps-M tag__text" :style="{ color: tags[text].color }">
       {{ tags[text].text }}
     </p>
   </div>
@@ -18,7 +18,12 @@ defineProps<{
 .tag {
   width: fit-content;
   border-radius: 8px;
-  padding: 8px;
+  padding: 4px;
+  width: 70px;
   box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+  &__text {
+    width: fit-content;
+    margin: 4px auto;
+  }
 }
 </style>

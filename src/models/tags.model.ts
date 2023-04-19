@@ -8,7 +8,7 @@ export enum tagNames {
   TypeScript = "TypeScript",
   Sass = "Sass",
   API = "API REST",
-  GraphQL = "GraphQL API",
+  // GraphQL = "GraphQL API",
   Boostrap = "Boostrap",
 }
 
@@ -58,11 +58,11 @@ export const tags = {
     color: "#000000",
     text: tagNames.API,
   },
-  [tagNames.GraphQL]: {
-    backgroundColor: "#971C6E",
-    color: "#FFFFFF",
-    text: tagNames.GraphQL,
-  },
+  // [tagNames.GraphQL]: {
+  //   backgroundColor: "#971C6E",
+  //   color: "#FFFFFF",
+  //   text: tagNames.GraphQL,
+  // },
   [tagNames.Boostrap]: {
     backgroundColor: "#7802DE",
     color: "#FFFFFF",

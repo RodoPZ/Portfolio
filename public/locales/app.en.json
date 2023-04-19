@@ -1,0 +1,23 @@
+{
+  "sidebar": {
+    "about": "Acerca de",
+    "skills": "Skills",
+    "projects": "Projects",
+    "Contact_me": "Contact me!",
+    "Resume": "Resume"
+  },
+  "about": {},
+  "skills": {
+    "technologies": "Technologies"
+  },
+  "projects": {
+    "portfolio": {
+      "title": "Portfolio",
+      "text": "My portfolio... This portfolio! Made with Vue, created to show my projects and knowledge to the world. Contact me! Let's do something together!"
+    },
+    "weather_app": {
+      "title": "Weather App",
+      "text": "Weather app that allows you to check the weather conditions of any part of the world. Designed in Figma, developed using React, Redux Toolkit, Typescript, Sass and bundled using Vite. The data was fetched from the 'WeatherApi' API and the final product was Deployed to Netlify. The goal of this project was to practice my newly acquired knowledge of React and show that I have the necessary skills to create a product from its conceptualization and design, to its development and deployment."
+    }
+  }
+}
