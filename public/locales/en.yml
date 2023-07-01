@@ -1,0 +1,13 @@
+buttons:
+  resume: Resume
+navbar:
+  about: About
+  skills: Skills
+  projects: Projects
+  contact_me: Contact me!
+hero:
+  name: RODOLFO PINEDO SUÁREZ
+  title: Full Stack Developer
+  description: >-
+    I'm a Full Stack Developer with 5+ years of experience in the field. I'm
+    passionate about technology and I love to learn new things.
