@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import NavLinksComponent from "@/components/NavLinksComponent.vue";
-import MobileMenuView from "./MobileMenuView.vue";
+import NavLinksComponent from "@cl/navbar/NavLinksComponent.vue";
+import MobileMenuView from "@cl/navbar/MobileMenuView.vue";
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import MobileMenuView from "./MobileMenuView.vue";
     <div class="desktopMenu">
       <NavLinksComponent />
     </div>
-    <!-- <MobileMenuView class="mobileMenu" /> -->
+    <MobileMenuView class="mobileMenu" />
   </div>
 </template>
 

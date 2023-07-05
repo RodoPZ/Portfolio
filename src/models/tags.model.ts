@@ -10,6 +10,7 @@ export enum tagNames {
   API = "API REST",
   // GraphQL = "GraphQL API",
   Boostrap = "Boostrap",
+  Godot = "Godot",
 }
 
 export const tags = {
@@ -67,5 +68,10 @@ export const tags = {
     backgroundColor: "#7802DE",
     color: "#FFFFFF",
     text: tagNames.Boostrap,
+  },
+  [tagNames.Godot]: {
+    backgroundColor: "#478CBF",
+    color: "#000",
+    text: tagNames.Godot,
   },
 };

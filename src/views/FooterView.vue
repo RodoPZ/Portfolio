@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SocialLinksComponent from "@/components/SocialLinksComponent.vue";
+import SocialLinksComponent from "@cl/hero/SocialLinksComponent.vue";
 </script>
 
 <template>

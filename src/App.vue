@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import NavbarView from "./views/NavbarView.vue";
 import HeroView from "./views/HeroView.vue";
-import SkillsView from "./views/SkillsView.vue";
-import ProjectsView from "./views/ProjectsView.vue";
+import SkillsView from "./views/skills/SkillsView.vue";
+import ProjectsView from "./views/projects/ProjectsView.vue";
 import ContactMeView from "./views/ContactMeView.vue";
 import FooterView from "./views/FooterView.vue";
 </script>
@@ -14,16 +14,16 @@ import FooterView from "./views/FooterView.vue";
     </nav>
   </header>
   <main>
-    <section>
+    <section id="About">
       <HeroView />
     </section>
-    <section>
+    <section id="Skills">
       <SkillsView />
     </section>
-    <section>
+    <section id="Projects">
       <ProjectsView />
     </section>
-    <section>
+    <section id="ContactMe">
       <ContactMeView />
     </section>
   </main>
@@ -44,6 +44,7 @@ main {
 section {
   min-height: 100vh;
   display: flex;
+  /* padding-top: 60px; */
   align-items: center;
 }
 </style>

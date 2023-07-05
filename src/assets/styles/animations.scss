@@ -1,0 +1,40 @@
+.slideInRight {
+  position: absolute;
+  animation: slideInRight 0.5s linear;
+}
+.slideInLeft {
+  animation: slideInLeft 0.5s linear;
+}
+//create an animation that slide to the right linear and keeps the position
+@keyframes slideInRight {
+  0% {
+    right: 0;
+    top: 0;
+    width: 100%;
+    transform: translateX(-100%);
+  }
+  100% {
+    right: 100%;
+    top: 0;
+    width: 100%;
+    transform: translateX(0%);
+  }
+}
+
+//create an animation that slide to the left linear
+@keyframes slideInLeft {
+  0% {
+    right: 0;
+    top: 0;
+    width: 100%;
+    transform: translateX(100%);
+  }
+  100% {
+    left: 100%;
+    top: 0;
+    width: 100%;
+    transform: translateX(0%);
+  }
+}
+
+//create an animation that

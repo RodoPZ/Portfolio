@@ -16,6 +16,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@cl": fileURLToPath(
+        new URL("./src/components/landing", import.meta.url)
+      ),
     },
   },
   css: {

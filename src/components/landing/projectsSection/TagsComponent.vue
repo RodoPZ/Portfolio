@@ -19,7 +19,9 @@ defineProps<{
   width: fit-content;
   border-radius: 8px;
   padding: 4px;
-  width: 70px;
+  //center
+  margin: 4px auto;
+  width: 100px;
   box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
   &__text {
     width: fit-content;

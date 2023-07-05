@@ -11,7 +11,7 @@ defineProps(["list", "title"]);
       :src="'src/assets/logos/' + item.name + '.svg'"
       :alt="item.name + ' logo'"
     />
-    <p class="Pr-M languageSkill__text">{{ item.name }}</p>
+    <p class="Ps-M languageSkill__text">{{ item.name }}</p>
     <div>
       <StarsComponent :stars="item.stars" />
     </div>

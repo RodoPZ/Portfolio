@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import NavLinksComponent from "@/components/NavLinksComponent.vue";
+import NavLinksComponent from "@cl/navbar/NavLinksComponent.vue";
 import { ref } from "vue";
 import "animate.css";
 const openMenu = ref(false);
-const animation = ref("");
+const animation = ref("animate__animated animate__fadeOutRight");
 const onClick = () => {
   openMenu.value = !openMenu.value;
   animation.value = openMenu.value
@@ -23,7 +23,7 @@ const onClick = () => {
       >
         close
       </span>
-      <NavLinksComponent />
+      <NavLinksComponent v-if="openMenu" />
     </aside>
   </div>
 </template>

@@ -17,7 +17,7 @@ defineProps<{
       :color="'#EDF2F4'"
       :size="'18px'"
     />
-    <WebIcon v-else-if="text == 'Web'" :color="'#EDF2F4'" />
+    <WebIcon v-else-if="text == 'Web'" :color="'#9cdcfe'" />
     <p class="Ps-M logoIcon__text">{{ text }}</p>
   </a>
 </template>
@@ -25,13 +25,13 @@ defineProps<{
 <style scoped lang="scss">
 .logoIcon {
   text-decoration: none;
-  border: 2px solid #edf2f4;
+  border: 2px solid $background-light;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 4px 8px;
+  padding: 4px 4px;
   gap: 4px;
   width: 100%;
   &__img {

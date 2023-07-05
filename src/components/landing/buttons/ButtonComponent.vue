@@ -1,8 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+</script>
 
 <template>
   <div class="btn__container">
-    <button class="btn Pr-M" type="submit">Resume</button>
+    <button class="btn Pr-M" type="submit">
+      {{ t("landing.buttons.resume") }}
+    </button>
   </div>
 </template>
 

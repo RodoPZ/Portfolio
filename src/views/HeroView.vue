@@ -1,17 +1,16 @@
 <script setup lang="ts">
-import buttonComponent from "@/components/ButtonComponent.vue";
-import SocialLinksComponent from "@/components/SocialLinksComponent.vue";
+import buttonComponent from "@cl/buttons/ButtonComponent.vue";
+import SocialLinksComponent from "@cl/hero/SocialLinksComponent.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="hero">
-    <h1 class="H1-M hero__title">Rodolfo Pinedo</h1>
-    <h2 class="H2-M hero__subtitle">Frontend Developer</h2>
+    <h1 class="H1-M hero__title">{{ t("landing.hero.name") }}</h1>
+    <h2 class="H2-M hero__subtitle">{{ t("landing.hero.title") }}</h2>
     <p class="Ps-M hero__text">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius harum
-      doloribus explicabo ratione incidunt expedita veniam, modi voluptates
-      fugit nemo nihil et sunt, sit pariatur dolores qui eveniet blanditiis
-      voluptas.
+      {{ t("landing.hero.description") }}
     </p>
     <SocialLinksComponent :size="'24px'" />
     <buttonComponent />

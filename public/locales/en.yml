@@ -1,13 +1,76 @@
-buttons:
-  resume: Resume
-navbar:
-  about: About
-  skills: Skills
-  projects: Projects
-  contact_me: Contact me!
-hero:
-  name: RODOLFO PINEDO SUÁREZ
-  title: Full Stack Developer
-  description: >-
-    I'm a Full Stack Developer with 5+ years of experience in the field. I'm
-    passionate about technology and I love to learn new things.
+landing:
+  banner:
+    skills: Skills
+  buttons:
+    resume: Resume
+  navbar:
+    about: About
+    skills: Skills
+    projects: Projects
+    contact_me: Contact me!
+  hero:
+    name: RODOLFO PINEDO SUÁREZ
+    title: Full Stack Developer
+    description: >-
+      I'm a Full Stack Developer with 5+ years of experience in the field. I'm
+      passionate about technology and I love to learn new things.
+  skills:
+    languages: Languages
+    technologies: Technologies
+  projects:
+    title: Projects
+    portfolio:
+      title: Portfolio
+      description: |
+        My portfolio... This portfolio! Made with Vue, created to show my projects and knowledge to the world.
+        - Contact me! Let's do something together!
+    weather_app:
+      title: Weather App
+      description: |
+        Weather app that allows you to check the weather conditions of any part of the world. 
+        - Designed in Figma, developed using React and bundled with Vite.
+        - The data was fetched from the 'WeatherApi' API and the final product was Deployed to Netlify.
+    petgram:
+      title: Petgram
+      description: |
+        Instagram clone web app for pets built to practice my React skills.
+        - Developed using React, bundled using Webpack and deployed to Github Pages.
+        - It uses a GraphQL API managed with Apollo Client and the session and data are persistent.
+    movieApi:
+      title: MovieAPI
+      description: |
+        Web app that allows you to search for movies and series. Developed using pure Typescript, HTML and CSS.
+        - The data was fetched from the 'TMDB API' API and the final product was Deployed to Netlify.
+    cashflow:
+      title: Cashflow
+      description: |
+        Web app that allows you to manage your personal finances. Developed using Vue.
+        - I learned to use Vue from scratch with this app and a few Youtube tutorials!!!.
+    todo_react:
+      title: Todo React
+      description: |
+        Todo app developed using pure React.
+        - This was my first web app using React, I made it following #Platzi tutorials.
+    platzi_conf:
+      title: Platzi Conf
+      description: |
+        This is one of the first pages I ever made, it was made using pure HTML and CSS.
+        - I made it following a Platzi course. They helped me a lot to get started in the world of web development!!.
+    farm_defence:
+      title: Farm Defence
+      description: |
+        A Tower Defence game where you defend your farm from evil monsters. 
+        - Created by my friend Tony and me using the Godot Engine and GDScript. 
+        - Despite missing a game jam deadline, we finished it for the love of the game and submitted it to itch.io and newgrounds.
+    clicker_miner:
+      title: Clicker Miner
+      description: |
+        A clicker game where you mine minerals and sell them to buy upgrades with Gameboy aesthetics.
+        - We submitted this game to a the GBJAM9 game jam and got ranked 25/42.
+        - Our game has over 2000 views over at itch.io and newgrounds.
+    lacking_light:
+      title: Lacking Light
+      description: |
+        A Godot 8-bit roguelike with darkness mechanics where you have to collect keys to escape the dungeon.
+        - Keep your torch lit and watch out for the monsters that lurk in the dark...
+        - We submited this game to the Mini jam 98 game jam and won a 3rd place!!!
