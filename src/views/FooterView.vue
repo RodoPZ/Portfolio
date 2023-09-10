@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import SocialLinksComponent from "@cl/hero/SocialLinksComponent.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="footer">
     <h2 class="H2-M">&lt;RodoPZ/></h2>
-    <h3 class="H3-M footer__subtitle">Front Developer</h3>
+    <h3 class="H3-M footer__subtitle">{{ t("landing.footer.job_title") }}</h3>
     <div class="footer__divider"></div>
-    <p class="Pr-M">Designed and built by RodoPZ</p>
+    <p class="Pr-M">{{ t("landing.footer.subtitle") }}</p>
     <SocialLinksComponent :size="'24px'" />
   </div>
 </template>

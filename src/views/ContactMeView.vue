@@ -1,62 +1,73 @@
 <script setup lang="ts">
 import BannerComponent from "@/components/BannerComponent.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="form">
-    <BannerComponent :text="'Contact me!'" />
+    <BannerComponent :text="t('landing.contact_me.title')" />
     <p class="form__text Pr-M">
-      Hey there. Thanks for checking out my portfolio. If you have any
-      questions, suggestions or want to get in touch, feel free to shoot me an
-      email. I'd love to hear from you.
+      {{ t("landing.contact_me.description") }}
     </p>
     <div class="form__section">
-      <label for="nameInput" class="Pr-M">Name</label>
+      <label for="nameInput" class="Pr-M">
+        {{ t("landing.contact_me.form.name") }}
+      </label>
       <input
         class="form__input Pr-M"
         type="text"
-        placeholder="Juan Perez"
+        :placeholder="t('landing.contact_me.form.name')"
         name="name"
         id="nameInput"
       />
     </div>
     <div class="form__section">
-      <label for="emailInput" class="Pr-M">Mail</label>
+      <label for="emailInput" class="Pr-M">
+        {{ t("landing.contact_me.form.email") }}
+      </label>
       <input
         class="form__input Pr-M"
         type="email"
         name="email"
         id="emailInput"
-        placeholder="Juanito@gmail.com"
+        :placeholder="t('landing.contact_me.form.email')"
       />
     </div>
     <div class="form__section">
-      <label for="SubjectInput" class="Pr-M">Subject</label>
+      <label for="SubjectInput" class="Pr-M">
+        {{ t("landing.contact_me.form.subject") }}
+      </label>
       <input
         class="form__input Pr-M"
         type="text"
         name="subject"
         id="SubjectInput"
-        placeholder="Subject here ...."
+        :placeholder="t('landing.contact_me.form.subject_placeholder')"
       />
     </div>
     <div class="form__section">
-      <label for="textInput" class="Pr-M">Text</label>
+      <label for="textInput" class="Pr-M">
+        {{ t("landing.contact_me.form.message") }}
+      </label>
       <textarea
         class="Pr-M form__textArea"
         name="text"
-        placeholder="Your msg here....."
+        :placeholder="t('landing.contact_me.form.message_placeholder')"
         id="textInput"
         cols="30"
         rows="10"
       ></textarea>
     </div>
-    <button class="form__button Pr-M" type="submit">Send</button>
+    <button class="form__button Pr-M" type="submit">
+      {{ t("landing.buttons.send") }}
+    </button>
   </div>
 </template>
 
 <style scoped lang="scss">
 .form {
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   gap: 16px;

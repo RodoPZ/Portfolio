@@ -3,6 +3,7 @@
   background-color: $background-black;
   font-family: "Roboto Mono", monospace;
   height: 100%;
+  scroll-behavior: smooth;
 }
 body,
 #app {
@@ -52,5 +53,11 @@ body,
   }
   .H1-M {
     font-size: 3.5rem;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

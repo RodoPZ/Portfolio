@@ -1,21 +1,31 @@
 <script setup lang="ts">
 import NavLinksComponent from "@cl/navbar/NavLinksComponent.vue";
-import { ref } from "vue";
+import { ref, watchEffect } from "vue";
 import "animate.css";
-const openMenu = ref(false);
+import { useMobileMenuStore } from "@/stores/buttons";
+
+const mobileMenu = useMobileMenuStore();
 const animation = ref("animate__animated animate__fadeOutRight");
+
 const onClick = () => {
-  openMenu.value = !openMenu.value;
-  animation.value = openMenu.value
+  mobileMenu.setChangeMobileMenu();
+};
+
+watchEffect(() => {
+  animation.value = mobileMenu.mobileMenu
     ? "animate__animated animate__fadeInRight"
     : "animate__animated animate__fadeOutRight";
-};
+});
 </script>
 
 <template>
   <div class="mobileMenu">
     <span @click="onClick" class="material-symbols-outlined"> menu </span>
-    <div v-if="openMenu" @click="onClick" class="mobileMenu__filter"></div>
+    <div
+      v-if="mobileMenu.mobileMenu"
+      @click="onClick"
+      class="mobileMenu__filter"
+    ></div>
     <aside :class="`mobileMenu__menu ${animation}`">
       <span
         @click="onClick"
@@ -23,7 +33,7 @@ const onClick = () => {
       >
         close
       </span>
-      <NavLinksComponent v-if="openMenu" />
+      <NavLinksComponent v-if="mobileMenu.mobileMenu" />
     </aside>
   </div>
 </template>

@@ -14,3 +14,15 @@ export const useCategoryStore = defineStore("category", {
     },
   },
 });
+
+export const useMobileMenuStore = defineStore("mobileMenu", {
+  state: () => ({ mobileMenu: false }),
+  actions: {
+    setMobileMenu(state: boolean) {
+      this.mobileMenu = state;
+    },
+    setChangeMobileMenu() {
+      this.mobileMenu = !this.mobileMenu;
+    },
+  },
+});
