@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div class="tag" :style="{ background: tags[text].backgroundColor }">
-    <p class="Ps-M tag__text" :style="{ color: tags[text].color }">
+    <p class="tag__text" :style="{ color: tags[text].color }">
       {{ tags[text].text }}
     </p>
   </div>

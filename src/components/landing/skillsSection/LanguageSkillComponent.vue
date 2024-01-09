@@ -5,13 +5,13 @@ defineProps(["list", "title"]);
 </script>
 
 <template>
-  <h2 class="languageSkill__title H2-M">{{ title }}</h2>
+  <h2 class="languageSkill__title">{{ title }}</h2>
   <div v-for="(item, index) in list" :key="index" class="languageSkill">
     <img
       :src="'src/assets/logos/' + item.name + '.svg'"
       :alt="item.name + ' logo'"
     />
-    <p class="Ps-M languageSkill__text">{{ item.name }}</p>
+    <p class="languageSkill__text">{{ item.name }}</p>
     <div>
       <StarsComponent :stars="item.stars" />
     </div>

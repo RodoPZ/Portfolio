@@ -9,7 +9,7 @@ const { t } = useI18n();
     <h2 class="H2-M">&lt;RodoPZ/></h2>
     <h3 class="H3-M footer__subtitle">{{ t("landing.footer.job_title") }}</h3>
     <div class="footer__divider"></div>
-    <p class="Pr-M">{{ t("landing.footer.subtitle") }}</p>
+    <p>{{ t("landing.footer.subtitle") }}</p>
     <SocialLinksComponent :size="'24px'" />
   </div>
 </template>

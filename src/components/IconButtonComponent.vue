@@ -18,7 +18,7 @@ defineProps<{
       :size="'18px'"
     />
     <WebIcon v-else-if="text == 'Web'" :color="'#9cdcfe'" />
-    <p class="Ps-M logoIcon__text">{{ text }}</p>
+    <p class="logoIcon__text">{{ text }}</p>
   </a>
 </template>
 

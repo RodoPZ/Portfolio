@@ -5,7 +5,7 @@ import MobileMenuView from "@cl/navbar/MobileMenuView.vue";
 
 <template>
   <div class="navbar">
-    <a href="/" class="navbar__title Pr-M">&lt;RodoPZ/></a>
+    <a href="/" class="navbar__title"><p>&lt;RodoPZ/></p></a>
     <div class="desktopMenu">
       <NavLinksComponent />
     </div>

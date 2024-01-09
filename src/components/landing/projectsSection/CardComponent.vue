@@ -17,15 +17,15 @@ defineProps([
   <div class="card" :style="{ backgroundImage: `url(${backgroud_image})` }">
     <div class="card__background">
       <div class="card__title">
-        <h3 class="H3-M" :style="{ color: titleColor }">
+        <h3 :style="{ color: titleColor }">
           {{ title }}
         </h3>
-        <h3 class="H3-M">
+        <h3>
           {{ emoji }}
         </h3>
       </div>
       <div class="card__divider" :style="{ backgroundColor: titleColor }"></div>
-      <p class="Ps-M card__text">
+      <p class="card__text">
         {{ text }}
       </p>
       <div class="card__tagsContainer">

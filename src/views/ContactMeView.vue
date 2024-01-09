@@ -7,15 +7,15 @@ const { t } = useI18n();
 <template>
   <div class="form">
     <BannerComponent :text="t('landing.contact_me.title')" />
-    <p class="form__text Pr-M">
+    <p class="form__text">
       {{ t("landing.contact_me.description") }}
     </p>
     <div class="form__section">
-      <label for="nameInput" class="Pr-M">
+      <label for="nameInput">
         {{ t("landing.contact_me.form.name") }}
       </label>
       <input
-        class="form__input Pr-M"
+        class="form__input"
         type="text"
         :placeholder="t('landing.contact_me.form.name')"
         name="name"
@@ -23,11 +23,11 @@ const { t } = useI18n();
       />
     </div>
     <div class="form__section">
-      <label for="emailInput" class="Pr-M">
+      <label for="emailInput">
         {{ t("landing.contact_me.form.email") }}
       </label>
       <input
-        class="form__input Pr-M"
+        class="form__input"
         type="email"
         name="email"
         id="emailInput"
@@ -35,11 +35,11 @@ const { t } = useI18n();
       />
     </div>
     <div class="form__section">
-      <label for="SubjectInput" class="Pr-M">
+      <label for="SubjectInput">
         {{ t("landing.contact_me.form.subject") }}
       </label>
       <input
-        class="form__input Pr-M"
+        class="form__input"
         type="text"
         name="subject"
         id="SubjectInput"
@@ -47,11 +47,11 @@ const { t } = useI18n();
       />
     </div>
     <div class="form__section">
-      <label for="textInput" class="Pr-M">
+      <label for="textInput">
         {{ t("landing.contact_me.form.message") }}
       </label>
       <textarea
-        class="Pr-M form__textArea"
+        class="form__textArea"
         name="text"
         :placeholder="t('landing.contact_me.form.message_placeholder')"
         id="textInput"
@@ -59,7 +59,7 @@ const { t } = useI18n();
         rows="10"
       ></textarea>
     </div>
-    <button class="form__button Pr-M" type="submit">
+    <button class="form__button" type="submit">
       {{ t("landing.buttons.send") }}
     </button>
   </div>

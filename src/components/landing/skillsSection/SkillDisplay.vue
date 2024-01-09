@@ -3,7 +3,7 @@ defineProps(["list", "title"]);
 </script>
 
 <template>
-  <h2 class="skillList__title H2-M">{{ title }}</h2>
+  <h2 class="skillList__title">{{ title }}</h2>
   <div class="skillList">
     <div v-for="(item, index) in list" :key="index" class="skillDisplay">
       <img
@@ -11,7 +11,7 @@ defineProps(["list", "title"]);
         :src="'src/assets/logos/' + item + '.svg'"
         :alt="item + ' logo'"
       />
-      <p class="Ps-M skillDisplay__text">{{ item }}</p>
+      <p class="skillDisplay__text">{{ item }}</p>
     </div>
   </div>
 </template>

@@ -18,7 +18,7 @@ for (let index = 1; index <= 3; index++) {
 
 <template>
   <div class="stars">
-    <!-- <p class="Ps-M stars__title">{{ levels[stars - 1] }}</p> -->
+    <!-- <p class="stars__title">{{ levels[stars - 1] }}</p> -->
     <div class="stars__container">
       <span
         v-for="i in 3"

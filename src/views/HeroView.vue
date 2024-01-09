@@ -7,12 +7,12 @@ const { t } = useI18n();
 
 <template>
   <div class="hero">
-    <h1 class="H1-M hero__title">{{ t("landing.hero.name") }}</h1>
-    <h2 class="H2-M hero__subtitle">{{ t("landing.hero.title") }}</h2>
-    <p class="Ps-M hero__text">
+    <h1 class="hero__title">{{ t("landing.hero.name") }}</h1>
+    <h2 class="hero__subtitle">{{ t("landing.hero.title") }}</h2>
+    <p class="hero__text">
       {{ t("landing.hero.description") }}
     </p>
-    <SocialLinksComponent :size="'24px'" />
+    <SocialLinksComponent :size="'48px'" />
     <buttonComponent />
   </div>
 </template>
@@ -32,7 +32,7 @@ const { t } = useI18n();
   &__title {
     text-align: center;
     color: $primary-dark;
-    font-size: 56px;
+    font-size: 30px;
     margin: 0;
   }
   &__subtitle {
