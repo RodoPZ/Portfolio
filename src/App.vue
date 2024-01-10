@@ -14,16 +14,16 @@ import FooterView from "./views/FooterView.vue";
     </nav>
   </header>
   <main>
-    <section id="About">
+    <section id="About" ref="About">
       <HeroView />
     </section>
-    <section id="Skills">
+    <section id="Skills" ref="Skills">
       <SkillsView />
     </section>
-    <section id="Projects">
+    <section id="Projects" ref="Projects">
       <ProjectsView />
     </section>
-    <section id="ContactMe">
+    <section id="ContactMe" ref="ContactMe">
       <ContactMeView />
     </section>
   </main>
@@ -37,7 +37,6 @@ main {
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
   max-width: 1024px;
   padding: 0px 20px;
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import NavLinksComponent from "@cl/navbar/NavLinksComponent.vue";
+import NavLinksComponent from "@landing/navbar/NavLinksComponent.vue";
 import { ref, watchEffect } from "vue";
 import "animate.css";
 import { useMobileMenuStore } from "@/stores/buttons";
@@ -41,6 +41,11 @@ watchEffect(() => {
 <style scoped lang="scss">
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  // on hover change color to primary and point
+  &:hover {
+    color: $primary;
+    cursor: pointer;
+  }
 }
 .mobileMenu {
   &__menu {

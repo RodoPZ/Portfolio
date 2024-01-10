@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import CardComponent from "@cl/projectsSection/CardComponent.vue";
-import TagsComponent from "@cl/projectsSection/TagsComponent.vue";
+import CardComponent from "@landing/projectsSection/CardComponent.vue";
+import TagsComponent from "@landing/projectsSection/TagsComponent.vue";
 import { tagNames } from "@/models/tags.model";
 import BannerComponent from "@/components/BannerComponent.vue";
 import { ref, watch } from "vue";
@@ -33,36 +33,42 @@ watch(
 
 <template>
   <div class="projects">
-    <BannerComponent :text="t('landing.projects.title')" />
-    <!-- <div class="selector">
-      <TagsComponent
-        v-for="(item, index) in tagNames"
-        :key="index"
-        :text="item"
-      />
-    </div> -->
+    <h2 class="text-center mb-0">
+      {{ t("landing.projects.title") }}
+    </h2>
     <CategorySelector />
-    <div class="projects__sections" :style="{ height: containerHeight }">
-      <div
-        v-for="(category, index) in ALL_CATEGORIES"
-        :key="index"
-        :class="
-          index === 0
-            ? `projects__card--left ${WebAnimation}`
-            : `projects__card--rigth ${VideoGamesAnimation}`
-        "
-      >
-        <CardComponent
-          v-for="(item, index) in category"
-          :key="index"
-          :title="item.title"
-          :emoji="item.emoji"
-          :text="item.description"
-          :tags="item.tags"
-          :links="item.links"
-          :backgroud_image="item.backgroud_image"
-          :titleColor="item.color"
-        />
+    <div id="carouselExampleIndicators" class="slide h-100">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="projects__card--left">
+            <CardComponent
+              v-for="(item, index) in ALL_CATEGORIES[0]"
+              :key="index"
+              :title="item.title"
+              :emoji="item.emoji"
+              :text="item.description"
+              :tags="item.tags"
+              :links="item.links"
+              :backgroud_image="item.backgroud_image"
+              :titleColor="item.color"
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="projects__card--left">
+            <CardComponent
+              v-for="(item, index) in ALL_CATEGORIES[1]"
+              :key="index"
+              :title="item.title"
+              :emoji="item.emoji"
+              :text="item.description"
+              :tags="item.tags"
+              :links="item.links"
+              :backgroud_image="item.backgroud_image"
+              :titleColor="item.color"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -78,7 +84,6 @@ watch(
   gap: 16px;
   &__sections {
     display: flex;
-
     overflow: hidden;
     //cut the overflow
     position: relative;
@@ -114,19 +119,5 @@ watch(
   flex-direction: row;
   padding: 8px 8px;
   gap: 8px;
-}
-
-//modify the animation to use the keyframes
-.animate__slideInLeft,
-.animate__slideInRight,
-.animate__slideOutLeft,
-.animate__slideOutRight {
-  animation-timing-function: linear;
-  animation-duration: 0.3s;
-}
-
-.animate__slideInRight,
-.animate__slideInLeft {
-  animation-delay: 0.03s;
 }
 </style>

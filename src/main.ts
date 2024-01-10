@@ -3,9 +3,8 @@ import { createPinia } from "pinia";
 import i18n from "./plugins/i18n";
 
 import App from "./App.vue";
-import "@/assets/styles/main.scss";
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap"
+import "./assets/styles/main.scss";
+import "bootstrap";
 
 const app = createApp(App);
 app.use(i18n);

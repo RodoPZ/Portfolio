@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import NavLinksComponent from "@cl/navbar/NavLinksComponent.vue";
-import MobileMenuView from "@cl/navbar/MobileMenuView.vue";
+import NavLinksComponent from "@landing/navbar/NavLinksComponent.vue";
+import MobileMenuView from "@landing/navbar/MobileMenuView.vue";
+import BannerComponent from "@/components/BannerComponent.vue";
 </script>
 
 <template>
-  <div class="navbar">
-    <a href="/" class="navbar__title"><p>&lt;RodoPZ/></p></a>
+  <div
+    class="navbar d-flex flex-row justify-content-between align-items-center bg-body text-body"
+  >
+    <a href="/"><BannerComponent :text="'<RodoPZ/>'" /></a>
     <div class="desktopMenu">
       <NavLinksComponent />
     </div>
@@ -14,38 +17,33 @@ import MobileMenuView from "@cl/navbar/MobileMenuView.vue";
 </template>
 
 <style scoped lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
+
 .mobileMenu {
   display: none;
 }
 .desktopMenu {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
 }
 
 .navbar {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   padding: 0px 20px;
-  background-color: $background-black;
   height: 64px;
   color: $background-light;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  &__title {
-    text-decoration: none;
-    font-weight: bold;
-  }
 }
 
-@media (max-width: 768px) {
+@include media-breakpoint-down(md) {
   .mobileMenu {
-    display: block;
+    display: flex;
   }
   .desktopMenu {
     display: none;

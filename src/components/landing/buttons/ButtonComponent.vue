@@ -6,7 +6,7 @@ const { t } = useI18n();
 <template>
   <div class="btn__container">
     <button class="btn Pr-M" type="submit">
-      {{ t("landing.buttons.resume") }}
+      <p class="mb-0">{{ t("landing.buttons.resume") }}</p>
     </button>
   </div>
 </template>

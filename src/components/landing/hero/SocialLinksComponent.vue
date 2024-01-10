@@ -8,10 +8,10 @@ defineProps(["size"]);
 
 <template>
   <div class="Medialinks">
-    <LinkedInIcon class="Medialinks__link" :color="'#EDF2F4'" :size="size" />
-    <MailIcon class="Medialinks__link" :color="'#EDF2F4'" :size="size" />
-    <GithubIcon class="Medialinks__link" :color="'#EDF2F4'" :size="size" />
-    <CodepenIcon class="Medialinks__link" :color="'#EDF2F4'" :size="size" />
+    <a href=""> <LinkedInIcon class="Medialinks__link" :size="size" /> </a>
+    <a href=""> <MailIcon class="Medialinks__link" :size="size" /> </a>
+    <a href=""> <GithubIcon class="Medialinks__link" :size="size" /></a>
+    <a href=""> <CodepenIcon class="Medialinks__link" :size="size" /></a>
   </div>
 </template>
 
@@ -23,6 +23,11 @@ defineProps(["size"]);
   gap: 8px;
   &__link {
     padding: 0px 8px;
+    fill: $body-color;
+    // on hover change color to primary
+    &:hover {
+      fill: $primary;
+    }
   }
 }
 </style>

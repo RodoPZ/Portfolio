@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import LanguageSkillComponent from "@cl/skillsSection/LanguageSkillComponent.vue";
-import SkillDisplay from "@cl/skillsSection/SkillDisplay.vue";
-import BannerComponent from "@/components/BannerComponent.vue";
+import LanguageSkillComponent from "@landing/skillsSection/LanguageSkillComponent.vue";
+import SkillDisplay from "@landing/skillsSection/SkillDisplay.vue";
 import { languageList, techList } from "./constants";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -9,7 +8,9 @@ const { t } = useI18n();
 
 <template>
   <div class="skillSection">
-    <BannerComponent :text="t('landing.banner.skills')" />
+    <h2 class="text-center mb-0">
+      {{ t("landing.skills.title") }}
+    </h2>
     <LanguageSkillComponent
       :list="languageList"
       :title="t('landing.skills.languages')"
@@ -27,7 +28,7 @@ const { t } = useI18n();
 .skillSection {
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
+  padding-top: 20px;
   gap: 16px;
 }
 </style>

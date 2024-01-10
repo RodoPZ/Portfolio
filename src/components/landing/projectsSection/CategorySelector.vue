@@ -1,25 +1,44 @@
 <script setup lang="ts">
 import { useCategoryStore } from "@/stores/buttons";
 import { Category } from "@/stores/buttons";
-const categories = useCategoryStore();
+import { Carousel } from "bootstrap";
 
+import { onMounted, ref } from "vue";
+
+const categories = useCategoryStore();
+const myCarouselElement = ref<HTMLElement | null>(null);
+let carousel: Carousel | null = null;
+
+onMounted(() => {
+  myCarouselElement.value = document.querySelector(
+    "#carouselExampleIndicators"
+  ) as HTMLElement;
+
+  if (myCarouselElement.value) {
+    carousel = new Carousel(myCarouselElement.value);
+  }
+});
 //use the function from the store to change the mode of the buttons,
 //categorySelector__buttonWeb changes the mode to web and
 //categorySelector__buttonVideoGames changes the mode to videogames
+
 function changeModeToWeb() {
   categories.setCategory(Category.WEB);
+  carousel?.to(0);
 }
 function changeModeToVideoGames() {
   categories.setCategory(Category.VIDEOGAMES);
+  carousel?.to(1);
 }
 </script>
 
 <template>
   <div :class="'categorySelector'">
     <button
-      :class="`categorySelector__buttonWeb ${
+      data-bs-target="#carouselExampleIndicators"
+      :class="`categorySelector__buttonWeb active${
         categories.category === Category.WEB
-          ? ' categorySelector__buttonWeb--selected animate__animated animate__flash animate__fast'
+          ? ' categorySelector__buttonWeb--selected'
           : ''
       }`"
       @click="changeModeToWeb"
@@ -28,9 +47,10 @@ function changeModeToVideoGames() {
       🌐 Web apps 🖥️
     </button>
     <button
+      data-bs-target="#carouselExampleIndicators"
       :class="`categorySelector__buttonVideoGames ${
         categories.category === Category.VIDEOGAMES
-          ? ' categorySelector__buttonVideoGames--selected animate__animated animate__flash animate__fast'
+          ? ' categorySelector__buttonVideoGames--selected'
           : ''
       }`"
       @click="changeModeToVideoGames"

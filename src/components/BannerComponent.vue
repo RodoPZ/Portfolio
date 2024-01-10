@@ -36,7 +36,7 @@ defineProps(["text"]);
 
 .crt__item {
   display: inline-block;
-  font: 3rem "Inconsolata", monospace;
+  font: 1.5rem "Inconsolata", monospace;
   margin: 0;
   width: auto;
 

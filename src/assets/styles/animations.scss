@@ -5,7 +5,11 @@
 .slideInLeft {
   animation: slideInLeft 0.5s linear;
 }
-//create an animation that slide to the right linear and keeps the position
+.slideInDown{
+  // make it infinite
+  animation: slideInDown 0.5s linear infinite;
+}
+// //create an animation that slide to the right linear and keeps the position
 @keyframes slideInRight {
   0% {
     right: 0;
@@ -37,4 +41,15 @@
   }
 }
 
-//create an animation that
+//create an animation that goes from current position, to down 10px and back to current position, while being in the middle
+@keyframes slideInDown {
+  0% {
+    transform: translate(-50%,0px);
+  }
+  50% {
+    transform: translate(-50%,10px);
+  }
+  100% {
+    transform: translate(-50%,0px);
+  }
+}

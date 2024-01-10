@@ -16,8 +16,11 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-      "@cl": fileURLToPath(
+      "@landing": fileURLToPath(
         new URL("./src/components/landing", import.meta.url)
+      ),
+      "@bootstrap": fileURLToPath(
+        new URL("./node_modules/bootstrap", import.meta.url)
       ),
     },
   },
@@ -25,10 +28,9 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @import "bootstrap/scss/functions";
-          @import "bootstrap/scss/variables";
-          @import "bootstrap/scss/mixins";
-          @import "@/assets/styles/variables.scss";`,
+          @import "src/assets/styles/variables.scss";
+          @import "src/assets/styles/animations.scss";
+          `,
       },
     },
   },

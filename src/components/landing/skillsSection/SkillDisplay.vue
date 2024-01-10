@@ -3,7 +3,7 @@ defineProps(["list", "title"]);
 </script>
 
 <template>
-  <h2 class="skillList__title">{{ title }}</h2>
+  <h4 class="skillList__title">{{ title }}</h4>
   <div class="skillList">
     <div v-for="(item, index) in list" :key="index" class="skillDisplay">
       <img
@@ -42,6 +42,7 @@ defineProps(["list", "title"]);
   }
   &__text {
     margin: 0;
+    font-size: 0.8rem;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SocialLinksComponent from "@cl/hero/SocialLinksComponent.vue";
+import SocialLinksComponent from "@landing/hero/SocialLinksComponent.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>

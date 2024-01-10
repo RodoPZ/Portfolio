@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ButtonComponent from "@cl/buttons/ButtonComponent.vue";
+import ButtonComponent from "@landing/buttons/ButtonComponent.vue";
 import { useI18n } from "vue-i18n";
 import { useMobileMenuStore } from "@/stores/buttons";
 
@@ -12,23 +12,18 @@ const onClick = () => {
 </script>
 
 <template>
-  <a @click="onClick" class="Pr-M link" href="#About">{{
-    t("landing.navbar.about")
-  }}</a>
-  <a @click="onClick" class="Pr-M link" href="#Skills">{{
-    t("landing.navbar.skills")
-  }}</a>
-  <a @click="onClick" class="Pr-M link" href="#Projects">{{
-    t("landing.navbar.projects")
-  }}</a>
-  <a @click="onClick" class="Pr-M link" href="#ContactMe">{{
-    t("landing.navbar.contact_me")
-  }}</a>
+  <a @click="onClick" href="#About"
+    ><p>{{ t("landing.navbar.about") }}</p></a
+  >
+  <a @click="onClick" href="#Skills"
+    ><p>{{ t("landing.navbar.skills") }}</p></a
+  >
+  <a @click="onClick" href="#Projects"
+    ><p>{{ t("landing.navbar.projects") }}</p></a
+  >
+  <a @click="onClick" href="#ContactMe"
+    ><p>{{ t("landing.navbar.contact_me") }}</p></a
+  >
   <ButtonComponent />
 </template>
 
-<style scoped lang="scss">
-.link {
-  text-decoration: none;
-}
-</style>

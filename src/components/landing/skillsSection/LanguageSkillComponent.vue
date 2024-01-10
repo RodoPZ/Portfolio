@@ -5,7 +5,7 @@ defineProps(["list", "title"]);
 </script>
 
 <template>
-  <h2 class="languageSkill__title">{{ title }}</h2>
+  <h4 class="languageSkill__title">{{ title }}</h4>
   <div v-for="(item, index) in list" :key="index" class="languageSkill">
     <img
       :src="'src/assets/logos/' + item.name + '.svg'"

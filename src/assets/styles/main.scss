@@ -1,51 +1,16 @@
-:root, body,
-#app { 
-  font-size: 62.5%;
-  background-color: $background-black;
-  font-family: "Roboto Mono", monospace;
-  height: 100%;
-  scroll-behavior: smooth;
-  margin: 0;
-  height: 100%;
-}
+@import "bootstrap/scss/bootstrap";
 
-
-h2{
-  font-size: 2rem;
-  color: $background-light;
-  margin: 0px;
-}
-
-h3 {
-  margin: 0px;
-  font-size: 1.8rem;
-  color: $background-light;
-}
-
-p {
-  font-size: 1.6rem;
-  color: $background-light;
-}
-
-h4 {
-  font-size: 1.4rem;
-  color: $background-light;
-}
-
-@include media-breakpoint-up(sm) { 
-  h2 {
-    font-size: 2.8rem;
-  }
-  h3 {
-    font-size: 2.4rem;
-  }
-  p {
-    font-size: 1.6rem;
-  }
-  h4 {
-    font-size: 1.8rem;
+a{
+  text-emphasis: none;
+  color: $body-color;
+  text-decoration: none;
+  // on hover
+  &:hover {
+    color: $primary;
+    text-decoration: none;
   }
 }
+
 
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -53,3 +18,4 @@ h4 {
     scroll-behavior: auto;
   }
 }
+
