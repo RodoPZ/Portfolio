@@ -70,7 +70,7 @@ defineProps([
     flex-direction: column;
     gap: 8px;
     border: 2px solid $background-light-1;
-    padding: 16px;
+    padding: 8px;
     border-radius: 8px;
     background-color: rgba(31, 38, 51, 0.6);
     backdrop-filter: blur(4px);
@@ -78,7 +78,7 @@ defineProps([
   &__foreground {
     background-color: rgba(31, 38, 51, 0.6);
     border-radius: 8px;
-    padding: 2px 2px;
+    padding: 8px;
     // difuse border
   }
   &__text {
