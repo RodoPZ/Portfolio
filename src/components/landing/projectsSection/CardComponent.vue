@@ -16,33 +16,37 @@ defineProps([
 <template>
   <div class="card" :style="{ backgroundImage: `url(${backgroud_image})` }">
     <div class="card__background">
-      <div class="card__title">
-        <h3 :style="{ color: titleColor }">
-          {{ title }}
-        </h3>
-        <h3>
-          {{ emoji }}
-        </h3>
-      </div>
-      <div class="card__divider" :style="{ backgroundColor: titleColor }"></div>
-      <p class="card__text">
-        {{ text }}
-      </p>
-      <div class="card__tagsContainer">
-        <TagsComponent
-          v-for="(item, index) in tags"
-          :key="index"
-          :text="item"
-        />
-      </div>
-      <!-- <div class="card__divider"></div> -->
-      <div class="card__linksContainer">
-        <IconButtonComponent
-          v-for="(value, index) in links"
-          :key="index"
-          :text="value.name"
-          :link="value.link"
-        />
+      <div class="card__foreground">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <h3 :style="{ color: titleColor }">
+            {{ title }}
+          </h3>
+          <h3>
+            {{ emoji }}
+          </h3>
+        </div>
+        <div
+          class="card__divider"
+          :style="{ backgroundColor: titleColor }"
+        ></div>
+        <p class="card__text">
+          {{ text }}
+        </p>
+        <div class="card__tagsContainer">
+          <TagsComponent
+            v-for="(item, index) in tags"
+            :key="index"
+            :text="item"
+          />
+        </div>
+        <div class="card__linksContainer">
+          <IconButtonComponent
+            v-for="(value, index) in links"
+            :key="index"
+            :text="value.name"
+            :link="value.link"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -68,25 +72,24 @@ defineProps([
     border: 2px solid $background-light-1;
     padding: 16px;
     border-radius: 8px;
-    background-color: rgba(31, 38, 51, 0.95);
+    background-color: rgba(31, 38, 51, 0.6);
+    backdrop-filter: blur(4px);
   }
-  &__title {
-    display: flex;
-    //center everything in the middle
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  &__foreground {
+    background-color: rgba(31, 38, 51, 0.6);
+    border-radius: 8px;
+    padding: 2px 2px;
+    // difuse border
   }
   &__text {
     white-space: pre-line;
-    // text-align: justify;
+    font-size: 0.9rem;
     margin: 0;
-    height: 250px;
+    height: 220px;
     overflow: scroll;
     white-space: pre-line;
   }
   &__divider {
-    // margin: 4px 0px;
     height: 2px;
     width: 100%;
   }

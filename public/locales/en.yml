@@ -21,6 +21,8 @@ landing:
     technologies: Technologies
   projects:
     title: Projects
+    web_apps: Web Apps
+    videogames: Videogames
     portfolio:
       title: Portfolio
       description: |
@@ -31,7 +33,7 @@ landing:
       description: |
         Weather app that allows you to check the weather conditions of any part of the world. 
         - Designed in Figma, developed using React and bundled with Vite.
-        - The data was fetched from the 'WeatherApi' API and the final product was Deployed to Netlify.
+        - The data was fetched from the 'WeatherApi' API.
     petgram:
       title: Petgram
       description: |
@@ -42,12 +44,12 @@ landing:
       title: MovieAPI
       description: |
         Web app that allows you to search for movies and series. Developed using pure Typescript, HTML and CSS.
-        - The data was fetched from the 'TMDB API' API and the final product was Deployed to Netlify.
+        - The data was fetched from the 'TMDB API' API.
     cashflow:
       title: Cashflow
       description: |
-        Web app that allows you to manage your personal finances. Developed using Vue.
-        - I learned to use Vue from scratch with this app and a few Youtube tutorials!!!.
+        Simple web app that allows you to manage your personal finances. Developed using Vue.
+        - It was my first time using vue.
     todo_react:
       title: Todo React
       description: |
@@ -62,8 +64,8 @@ landing:
       title: Farm Defence
       description: |
         A Tower Defence game where you defend your farm from evil monsters. 
-        - Created by my friend Tony and me using the Godot Engine and GDScript. 
-        - Despite missing a game jam deadline, we finished it for the love of the game and submitted it to itch.io and newgrounds.
+        - Created using the Godot Engine and GDScript. 
+        - Despite missing a game jam deadline, we finished it for the love of the game.
     clicker_miner:
       title: Clicker Miner
       description: |

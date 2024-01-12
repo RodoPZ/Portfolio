@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import CardComponent from "@landing/projectsSection/CardComponent.vue";
-import TagsComponent from "@landing/projectsSection/TagsComponent.vue";
-import { tagNames } from "@/models/tags.model";
-import BannerComponent from "@/components/BannerComponent.vue";
 import { ref, watch } from "vue";
 import { ALL_CATEGORIES } from "./constants";
 import { useI18n } from "vue-i18n";
@@ -37,7 +34,7 @@ watch(
       {{ t("landing.projects.title") }}
     </h2>
     <CategorySelector />
-    <div id="carouselExampleIndicators" class="slide h-100">
+    <div id="projectsCarousel" class="slide h-100">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="projects__card--left">

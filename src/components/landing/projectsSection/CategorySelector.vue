@@ -2,8 +2,10 @@
 import { useCategoryStore } from "@/stores/buttons";
 import { Category } from "@/stores/buttons";
 import { Carousel } from "bootstrap";
-
 import { onMounted, ref } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 
 const categories = useCategoryStore();
 const myCarouselElement = ref<HTMLElement | null>(null);
@@ -11,7 +13,7 @@ let carousel: Carousel | null = null;
 
 onMounted(() => {
   myCarouselElement.value = document.querySelector(
-    "#carouselExampleIndicators"
+    "#projectsCarousel"
   ) as HTMLElement;
 
   if (myCarouselElement.value) {
@@ -35,74 +37,59 @@ function changeModeToVideoGames() {
 <template>
   <div :class="'categorySelector'">
     <button
-      data-bs-target="#carouselExampleIndicators"
-      :class="`categorySelector__buttonWeb active${
+      data-bs-target="#projectsCarousel"
+      :class="`categorySelector__buttonWeb ${
         categories.category === Category.WEB
           ? ' categorySelector__buttonWeb--selected'
-          : ''
+          : 'categorySelector__buttonWeb'
       }`"
       @click="changeModeToWeb"
       type="button"
     >
-      🌐 Web apps 🖥️
+      <p>{{ `🖥️ ${t("landing.projects.web_apps")}` }}</p>
     </button>
     <button
-      data-bs-target="#carouselExampleIndicators"
+      data-bs-target="#projectsCarousel"
       :class="`categorySelector__buttonVideoGames ${
         categories.category === Category.VIDEOGAMES
           ? ' categorySelector__buttonVideoGames--selected'
-          : ''
+          : 'categorySelector__buttonWeb'
       }`"
       @click="changeModeToVideoGames"
       type="button"
     >
-      🎮 Videogames 🕹️
+      <p>{{ `🎮 ${t("landing.projects.videogames")}` }}</p>
     </button>
   </div>
 </template>
 
 <style scoped lang="scss">
+p {
+  font-size: 0.9rem;
+}
 .categorySelector {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  &__buttonWeb {
-    background-color: transparent;
-    color: $background-light;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px 8px;
-    border: 2px solid $background-light;
-    border-right: 0px;
-    &:focus {
-      border: 2px solid $primary-dark;
-      background-color: $background-black-1;
-      color: $primary-dark;
-    }
-    &--selected {
-      border: 2px solid $primary-dark;
-      background-color: $background-black-1;
-      color: $primary-dark;
-    }
-  }
+  // round corners
+  &__buttonWeb,
   &__buttonVideoGames {
     background-color: transparent;
-    color: $background-light;
+    color: $body-color;
     width: 100%;
     box-sizing: border-box;
     padding: 12px 8px;
-    border: 2px solid $background-light;
-    border-left: 0px;
-    &:focus {
-      border: 2px solid $primary-dark;
-      background-color: $background-black-1;
-      color: $primary-dark;
-    }
+    border: 2px solid $body-color;
     &--selected {
-      border: 2px solid $primary-dark;
-      background-color: $background-black-1;
-      color: $primary-dark;
+      border: 2px solid $primary;
+      color: $primary;
     }
+  }
+  &__buttonWeb {
+    border-radius: 8px 0 0 8px;
+  }
+  &__buttonVideoGames {
+    border-radius: 0 8px 8px 0;
   }
 }
 </style>

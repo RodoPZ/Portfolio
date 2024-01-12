@@ -16,14 +16,16 @@ defineProps<{
 
 <style scoped lang="scss">
 .tag {
-  width: fit-content;
+  // fill the space that is left on the container
+  flex-grow: 1;
+  // round corners
   border-radius: 8px;
-  padding: 4px;
-  //center
-  margin: 4px auto;
-  width: 100px;
+  margin: 0px 2px 2px;
+  padding: 0px 2px;
+
   box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
   &__text {
+    font-size: 0.8rem;
     width: fit-content;
     margin: 4px auto;
   }
