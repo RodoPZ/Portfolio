@@ -24,6 +24,7 @@ const onClick = () => {
   <a @click="onClick" href="#ContactMe"
     ><p>{{ t("landing.navbar.contact_me") }}</p></a
   >
-  <ButtonComponent />
+  <div>
+    <ButtonComponent title="Resume" />
+  </div>
 </template>
-

@@ -3,7 +3,7 @@ defineProps(["list", "title"]);
 </script>
 
 <template>
-  <h4 class="skillList__title">{{ title }}</h4>
+  <h3 class="skillList__title">{{ title }}</h3>
   <div class="skillList">
     <div v-for="(item, index) in list" :key="index" class="skillDisplay">
       <img
@@ -17,6 +17,9 @@ defineProps(["list", "title"]);
 </template>
 
 <style scoped lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
 .skillList {
   display: flex;
   justify-content: center;
@@ -43,6 +46,31 @@ defineProps(["list", "title"]);
   &__text {
     margin: 0;
     font-size: 0.8rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .skillDisplay {
+    width: 120px;
+    height: 120px;
+    &__img {
+      width: 55px;
+      height: 55px;
+    }
+    &__text {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .skillDisplay {
+    width: 150px;
+    height: 150px;
+    &__img {
+      width: 75px;
+      height: 75px;
+    }
   }
 }
 </style>

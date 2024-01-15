@@ -49,4 +49,11 @@ import BannerComponent from "@/components/BannerComponent.vue";
     display: none;
   }
 }
+
+@include media-breakpoint-up(md) {
+  .navbar {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
 </style>

@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import SocialLinksComponent from "@landing/hero/SocialLinksComponent.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
 
 <template>
   <div class="footer">
-    <h2 class="H2-M">&lt;RodoPZ/></h2>
-    <h3 class="H3-M footer__subtitle">{{ t("landing.footer.job_title") }}</h3>
+    <h2 class="text-primary">&lt;RodoPZ/></h2>
+    <h3 class="footer__subtitle">{{ t("landing.footer.job_title") }}</h3>
     <div class="footer__divider"></div>
-    <p>{{ t("landing.footer.subtitle") }}</p>
-    <SocialLinksComponent :size="'24px'" />
+    <p class="text-center">{{ t("landing.footer.subtitle") }}</p>
   </div>
 </template>
 
@@ -29,6 +27,9 @@ const { t } = useI18n();
     background-color: $background-light-1;
     width: 100%;
     height: 2px;
+  }
+  &__text {
+    text-align: center;
   }
 }
 </style>

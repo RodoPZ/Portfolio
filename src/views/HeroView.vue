@@ -29,15 +29,17 @@ onMounted(() => {
       <h2 class="hero__subtitle text-center text-secondary m-0">
         {{ t("landing.hero.title") }}
       </h2>
-      <p class="text-center m-0">
+      <p class="hero__description text-center m-0">
         {{ t("landing.hero.description") }}
       </p>
       <SocialLinksComponent :size="'48px'" />
-      <buttonComponent />
+      <div class="hero__button">
+        <buttonComponent :title="'Resume'" />
+      </div>
     </div>
     <span
       @click="scrollToSkills"
-      class="material-symbols-outlined text-primary slideInDown"
+      class="material-symbols-outlined text-primary slideInDown arrow-size"
     >
       arrow_downward
     </span>
@@ -45,6 +47,9 @@ onMounted(() => {
 </template>
 
 <style scoped lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   bottom: 20px;
@@ -54,7 +59,6 @@ onMounted(() => {
   // add pointer
   cursor: pointer;
 }
-
 .hero {
   height: 100vh;
   &__main {
@@ -65,6 +69,32 @@ onMounted(() => {
   }
   &__subtitle {
     font-size: 28px;
+  }
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .hero {
+    &__main {
+      gap: 24px;
+    }
+    &__title {
+      font-size: rfs-fluid-value(3rem);
+    }
+    &__subtitle {
+      font-size: rfs-fluid-value(2rem);
+    }
+    &__description {
+      font-size: rfs-fluid-value(1.5rem);
+    }
+  }
+
+  .material-symbols-outlined {
+    font-size: rfs-fluid-value(3rem);
   }
 }
 </style>

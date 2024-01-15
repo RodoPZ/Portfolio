@@ -32,7 +32,7 @@ defineProps([
         <p class="card__text">
           {{ text }}
         </p>
-        <div class="card__tagsContainer">
+        <div class="card__tagsContainer mb-1">
           <TagsComponent
             v-for="(item, index) in tags"
             :key="index"
@@ -53,6 +53,9 @@ defineProps([
 </template>
 
 <style scoped lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
 .card {
   //make background image darker
   background-size: cover;
@@ -60,34 +63,41 @@ defineProps([
   background-repeat: no-repeat;
   //make a line in the border
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   border-radius: 8px;
   background-color: $background-black-1;
-
+  height: 420px;
   &__background {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
     border: 2px solid $background-light-1;
     padding: 8px;
+    height: inherit;
     border-radius: 8px;
-    background-color: rgba(31, 38, 51, 0.6);
+    background-color: rgba(31, 38, 51, 0.5);
     backdrop-filter: blur(4px);
   }
   &__foreground {
-    background-color: rgba(31, 38, 51, 0.6);
+    background-color: rgba(31, 38, 51, 0.8);
     border-radius: 8px;
     padding: 8px;
+    height: calc(420px - 16px);
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
     // difuse border
   }
   &__text {
     white-space: pre-line;
-    font-size: 0.9rem;
     margin: 0;
-    height: 220px;
+    height: 100%;
     overflow: scroll;
     white-space: pre-line;
+    // remove scrollbar
+    scrollbar-width: none;
+    // Firefox
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+    }
   }
   &__divider {
     height: 2px;
@@ -107,6 +117,18 @@ defineProps([
     gap: 4px;
     width: 100%;
     align-items: stretch;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .card {
+    width: calc(50% - 12px);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .card {
+    width: calc(33.33% - 12px);
   }
 }
 </style>

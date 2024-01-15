@@ -11,6 +11,9 @@ defineProps(["text"]);
 </template>
 
 <style scoped lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
 .crt {
   display: flex;
   align-items: center;
@@ -138,6 +141,12 @@ defineProps(["text"]);
   50%,
   99% {
     opacity: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .crt__item {
+    font: 2rem "Inconsolata", monospace;
   }
 }
 </style>

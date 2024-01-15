@@ -90,20 +90,19 @@ watch(
   }
   &__card--rigth {
     //move card to the left
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     position: absolute;
     right: 0;
     top: 0;
-    width: 100%;
     //use the keyframes
   }
-  &__card--left {
-    display: flex;
-    flex-direction: column;
+  &__card--left,
+  &__card--rigth {
     gap: 16px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .selector {

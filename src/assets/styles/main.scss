@@ -11,11 +11,37 @@ a{
   }
 }
 
-
-
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 }
+
+h4 {
+  font-size: rfs-fluid-value(0.9rem);
+}
+
+@include media-breakpoint-up(sm) {
+  h2{
+    font-size: rfs-fluid-value(2.2rem);
+  }
+  h3{
+    font-size: rfs-fluid-value(1.4rem);
+  }
+  p {
+    font-size: rfs-fluid-value(1rem);
+  }
+  h4{
+    font-size: rfs-fluid-value(1rem);
+  }
+}
+
+
+
+
+
+
+
+
+
 

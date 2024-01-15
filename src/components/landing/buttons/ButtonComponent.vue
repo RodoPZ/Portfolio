@@ -1,19 +1,17 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-const { t } = useI18n();
+defineProps(["title", "handleClick", "type"]);
 </script>
 
 <template>
-  <div class="btn__container">
-    <button class="btn Pr-M" type="submit">
-      <p class="mb-0">{{ t("landing.buttons.resume") }}</p>
-    </button>
-  </div>
+  <button class="btn w-100 h-100" :type="type" @click="handleClick">
+    <p class="mb-0">{{ title }}</p>
+  </button>
 </template>
 
 <style scoped lang="scss">
 .btn {
   width: fit-content;
+  max-width: 320px;
   background-color: transparent;
   border: 2px solid $background-light;
   border-radius: 4px;
@@ -22,7 +20,8 @@ const { t } = useI18n();
     display: flex;
     justify-content: center;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     color: $primary-dark;
     border: 2px solid $primary-dark;
   }
