@@ -19,6 +19,7 @@ a{
 
 h4 {
   font-size: rfs-fluid-value(0.9rem);
+  margin-bottom: 0;
 }
 
 @include media-breakpoint-up(sm) {

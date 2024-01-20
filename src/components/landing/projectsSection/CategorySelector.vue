@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useCategoryStore } from "@/stores/buttons";
-import { Category } from "@/stores/buttons";
+import { CATEGORIES } from "@/stores/buttons";
 import { Carousel } from "bootstrap";
 import { onMounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
@@ -25,11 +25,11 @@ onMounted(() => {
 //categorySelector__buttonVideoGames changes the mode to videogames
 
 function changeModeToWeb() {
-  categories.setCategory(Category.WEB);
+  categories.setCategory(CATEGORIES.WEB);
   carousel?.to(0);
 }
 function changeModeToVideoGames() {
-  categories.setCategory(Category.VIDEOGAMES);
+  categories.setCategory(CATEGORIES.VIDEOGAMES);
   carousel?.to(1);
 }
 </script>
@@ -39,34 +39,31 @@ function changeModeToVideoGames() {
     <button
       data-bs-target="#projectsCarousel"
       :class="`categorySelector__buttonWeb ${
-        categories.category === Category.WEB
+        categories.category === CATEGORIES.WEB
           ? ' categorySelector__buttonWeb--selected'
           : 'categorySelector__buttonWeb'
       }`"
       @click="changeModeToWeb"
       type="button"
     >
-      <p>{{ `🖥️ ${t("landing.projects.web_apps")}` }}</p>
+      <h4>{{ `🖥️ ${t("landing.projects.web_apps")}` }}</h4>
     </button>
     <button
       data-bs-target="#projectsCarousel"
       :class="`categorySelector__buttonVideoGames ${
-        categories.category === Category.VIDEOGAMES
+        categories.category === CATEGORIES.VIDEOGAMES
           ? ' categorySelector__buttonVideoGames--selected'
           : 'categorySelector__buttonWeb'
       }`"
       @click="changeModeToVideoGames"
       type="button"
     >
-      <p>{{ `🎮 ${t("landing.projects.videogames")}` }}</p>
+      <h4>{{ `🎮 ${t("landing.projects.videogames")}` }}</h4>
     </button>
   </div>
 </template>
 
 <style scoped lang="scss">
-p {
-  font-size: 0.9rem;
-}
 .categorySelector {
   display: flex;
   justify-content: center;

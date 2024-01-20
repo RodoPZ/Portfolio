@@ -32,18 +32,43 @@ import FooterView from "./views/FooterView.vue";
   </footer>
 </template>
 
-<style>
+<style lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
+
+#Projects {
+  align-items: flex-start;
+}
+#About {
+  background-color: $background-black-1;
+  margin: 0;
+  max-width: none;
+  display: flex;
+  justify-content: center;
+}
 main {
   margin: auto;
   display: flex;
   flex-direction: column;
-  max-width: 1024px;
-  padding: 0px 20px;
 }
 section {
   min-height: 100vh;
   display: flex;
   /* padding-top: 60px; */
   align-items: center;
+  padding: 0px 20px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+nav {
+  width: 100vw;
+  height: 64px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: $body-bg;
+  z-index: 2;
 }
 </style>

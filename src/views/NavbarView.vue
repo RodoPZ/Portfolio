@@ -2,6 +2,14 @@
 import NavLinksComponent from "@landing/navbar/NavLinksComponent.vue";
 import MobileMenuView from "@landing/navbar/MobileMenuView.vue";
 import BannerComponent from "@/components/BannerComponent.vue";
+import { ref } from "vue";
+import ButtonComponent from "@/components/landing/buttons/ButtonComponent.vue";
+
+const alertState = ref(true);
+
+const handleClick = () => {
+  alertState.value = false;
+};
 </script>
 
 <template>
@@ -14,6 +22,16 @@ import BannerComponent from "@/components/BannerComponent.vue";
     </div>
     <MobileMenuView class="mobileMenu" />
   </div>
+  <div v-if="alertState" class="alert alert-warning w-100" role="alert">
+    <h6 class="alert__text m-0">⚠️Página en progreso!🚧</h6>
+    <div>
+      <ButtonComponent
+        :iconName="'close'"
+        @click="handleClick"
+        :style="'text-black border-0'"
+      />
+    </div>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -24,6 +42,18 @@ import BannerComponent from "@/components/BannerComponent.vue";
 .mobileMenu {
   display: none;
 }
+.alert {
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  align-items: center;
+  padding: 4px;
+  top: 64px;
+  &__text {
+    text-align: center;
+    width: 100%;
+  }
+}
 .desktopMenu {
   display: flex;
   align-items: center;
@@ -32,16 +62,13 @@ import BannerComponent from "@/components/BannerComponent.vue";
 
 .navbar {
   z-index: 3;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   padding: 0px 20px;
   height: 64px;
   color: $background-light;
+  width: 100%;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .mobileMenu {
     display: flex;
   }
@@ -53,7 +80,6 @@ import BannerComponent from "@/components/BannerComponent.vue";
 @include media-breakpoint-up(md) {
   .navbar {
     max-width: 1400px;
-    margin: auto;
   }
 }
 </style>

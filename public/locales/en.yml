@@ -10,13 +10,17 @@ landing:
     projects: Projects
     contact_me: Contact me!
   hero:
-    name: RODOLFO PINEDO
+    name: RODOLFO PINEDO SUÁREZ
     title: Full Stack Developer
     description: >-
-      I'm a Full Stack Developer with 5+ years of experience in the field. I'm
-      passionate about technology and I love to learn new things.
+      I'm a Full Stack Developer with expertise in React and Ruby, passionate about web development and 
+      always eager to learn new technologies. Currently, I'm expanding my skills and I feel prepared to work with Vue.js. 
   skills:
     title: Skills
+    description: >- 
+      Focused on front-end development with React and Vue.js, my back-end expertise centers around Ruby,
+      complemented by a strong foundation in MySQL and Firebase for database management. Currently expanding into Node.js,
+      I bring a versatile approach to crafting responsive and data-driven web applications.
     languages: Languages
     technologies: Technologies
   projects:

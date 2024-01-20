@@ -29,7 +29,7 @@ onMounted(() => {
       <h2 class="hero__subtitle text-center text-secondary m-0">
         {{ t("landing.hero.title") }}
       </h2>
-      <p class="hero__description text-center m-0">
+      <p class="hero__description m-0">
         {{ t("landing.hero.description") }}
       </p>
       <SocialLinksComponent :size="'48px'" />
@@ -61,6 +61,7 @@ onMounted(() => {
 }
 .hero {
   height: 100vh;
+  max-width: 1024px;
   &__main {
     gap: 12px;
   }
@@ -69,6 +70,9 @@ onMounted(() => {
   }
   &__subtitle {
     font-size: 28px;
+  }
+  &__description {
+    text-align: justify;
   }
   &__button {
     width: 100%;
@@ -90,6 +94,7 @@ onMounted(() => {
     }
     &__description {
       font-size: rfs-fluid-value(1.5rem);
+      text-align: center;
     }
   }
 

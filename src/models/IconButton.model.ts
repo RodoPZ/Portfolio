@@ -1,5 +1,5 @@
-export enum IconButtons {
-  Github = "Github",
-  Web = "Web",
-  Figma = "Figma",
+export enum ICON_BUTTONS {
+  GITHUB = "Github",
+  WEB = "Web",
+  FIGMA = "Figma",
 }

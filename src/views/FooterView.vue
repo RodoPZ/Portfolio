@@ -22,6 +22,7 @@ const { t } = useI18n();
   padding: 20px 0px;
   &__subtitle {
     color: $secondary-dark;
+    text-align: center;
   }
   &__divider {
     background-color: $background-light-1;

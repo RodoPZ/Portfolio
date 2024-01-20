@@ -7,10 +7,13 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="skillSection">
+  <div class="skillSection mt-5">
     <h2 class="text-center mb-0">
       {{ t("landing.skills.title") }}
     </h2>
+    <p class="skillSection__description mb-3">
+      {{ t("landing.skills.description") }}
+    </p>
     <LanguageSkillComponent
       :list="languageList"
       :title="t('landing.skills.languages')"
@@ -20,6 +23,9 @@ const { t } = useI18n();
 </template>
 
 <style scoped lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
 .container {
   display: flex;
   flex-direction: column;
@@ -30,5 +36,14 @@ const { t } = useI18n();
   flex-direction: column;
   padding-top: 20px;
   gap: 16px;
+  &__description {
+    text-align: justify;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .skillSection {
+    gap: 24px;
+  }
 }
 </style>

@@ -1,15 +1,11 @@
 import { defineStore } from "pinia";
-
+import { CATEGORIES } from "@/models/categories.model";
 //create an enum for the different categories
-export enum Category {
-  WEB,
-  VIDEOGAMES,
-}
 
 export const useCategoryStore = defineStore("category", {
-  state: () => ({ category: Category.WEB }),
+  state: () => ({ category: CATEGORIES.WEB }),
   actions: {
-    setCategory(category: Category) {
+    setCategory(category: CATEGORIES) {
       this.category = category;
     },
   },

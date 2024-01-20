@@ -66,7 +66,7 @@ defineProps([
   align-items: flex-start;
   border-radius: 8px;
   background-color: $background-black-1;
-  height: 420px;
+  height: 500px;
   &__background {
     border: 2px solid $background-light-1;
     padding: 8px;
@@ -79,7 +79,7 @@ defineProps([
     background-color: rgba(31, 38, 51, 0.8);
     border-radius: 8px;
     padding: 8px;
-    height: calc(420px - 16px);
+    height: calc(500px - 16px);
     gap: 4px;
     display: flex;
     flex-direction: column;
@@ -93,6 +93,7 @@ defineProps([
     white-space: pre-line;
     // remove scrollbar
     scrollbar-width: none;
+    text-align: justify;
     // Firefox
     &::-webkit-scrollbar {
       width: 0px;

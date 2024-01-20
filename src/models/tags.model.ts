@@ -1,77 +1,77 @@
-export enum tagNames {
+export enum TAG_NAMES {
   All = "All",
-  Vue = "Vue",
-  React = "React",
-  Firebase = "Firebase",
-  Figma = "Figma",
-  Redux = "Redux",
-  TypeScript = "TypeScript",
-  Sass = "Sass",
+  VUE = "Vue",
+  REACT = "React",
+  FIREBASE = "Firebase",
+  FIGMA = "Figma",
+  REDUX = "Redux",
+  TYPESCRIPT = "TypeScript",
+  SASS = "Sass",
   API = "API REST",
   // GraphQL = "GraphQL API",
-  Boostrap = "Boostrap",
-  Godot = "Godot",
+  BOOTSTRAP = "Boostrap",
+  GODOT = "Godot",
 }
 
 export const tags = {
-  [tagNames.All]: {
+  [TAG_NAMES.All]: {
     backgroundColor: "#293241",
     color: "#EDF2F4",
-    text: tagNames.All,
+    text: TAG_NAMES.All,
   },
-  [tagNames.Vue]: {
+  [TAG_NAMES.VUE]: {
     backgroundColor: "#3EAF7C",
     color: "#000000",
-    text: tagNames.Vue,
+    text: TAG_NAMES.VUE,
   },
-  [tagNames.React]: {
+  [TAG_NAMES.REACT]: {
     backgroundColor: "#61DBFB",
     color: "#000000",
-    text: tagNames.React,
+    text: TAG_NAMES.REACT,
   },
-  [tagNames.Firebase]: {
+  [TAG_NAMES.FIREBASE]: {
     backgroundColor: "#FCCA3F",
     color: "#000000",
-    text: tagNames.Firebase,
+    text: TAG_NAMES.FIREBASE,
   },
-  [tagNames.Figma]: {
+  [TAG_NAMES.FIGMA]: {
     backgroundColor: "#F5744D",
     color: "#000000",
-    text: tagNames.Figma,
+    text: TAG_NAMES.FIGMA,
   },
-  [tagNames.Redux]: {
+  [TAG_NAMES.REDUX]: {
     backgroundColor: "#663EA8",
     color: "#FFFFFF",
-    text: tagNames.Redux,
+    text: TAG_NAMES.REDUX,
   },
-  [tagNames.TypeScript]: {
+  [TAG_NAMES.TYPESCRIPT]: {
     backgroundColor: "#6CA1DA",
     color: "#000000",
-    text: tagNames.TypeScript,
+    text: TAG_NAMES.TYPESCRIPT,
   },
-  [tagNames.Sass]: {
+  [TAG_NAMES.SASS]: {
     backgroundColor: "#D279A3",
     color: "#000000",
-    text: tagNames.Sass,
+    text: TAG_NAMES.SASS,
   },
-  [tagNames.API]: {
+  [TAG_NAMES.API]: {
     backgroundColor: "#79D29D",
     color: "#000000",
-    text: tagNames.API,
+    text: TAG_NAMES.API,
   },
-  // [tagNames.GraphQL]: {
+  // [TAG_NAMES.GraphQL]: {
   //   backgroundColor: "#971C6E",
   //   color: "#FFFFFF",
-  //   text: tagNames.GraphQL,
+  //   text: TAG_NAMES.GraphQL,
   // },
-  [tagNames.Boostrap]: {
+  [TAG_NAMES.BOOTSTRAP]: {
     backgroundColor: "#7802DE",
     color: "#FFFFFF",
-    text: tagNames.Boostrap,
+    text: TAG_NAMES.BOOTSTRAP,
   },
-  [tagNames.Godot]: {
+  [TAG_NAMES.GODOT]: {
     backgroundColor: "#478CBF",
     color: "#000",
-    text: tagNames.Godot,
+    text: TAG_NAMES.GODOT,
   },
 };

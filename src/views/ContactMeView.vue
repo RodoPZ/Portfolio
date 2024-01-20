@@ -19,6 +19,9 @@ const { t } = useI18n();
 </template>
 
 <style scoped lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
 .form {
   padding-top: 70px;
   display: flex;
@@ -52,5 +55,13 @@ const { t } = useI18n();
 
 textarea {
   font-family: inherit;
+}
+
+@include media-breakpoint-up(sm) {
+  .form {
+    &__text {
+      text-align: center;
+    }
+  }
 }
 </style>

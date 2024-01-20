@@ -3,8 +3,8 @@ import CardComponent from "@landing/projectsSection/CardComponent.vue";
 import { ref, watch } from "vue";
 import { ALL_CATEGORIES } from "./constants";
 import { useI18n } from "vue-i18n";
-import CategorySelector from "@/components/landing/projectsSection/CategorySelector.vue";
-import { Category, useCategoryStore } from "@/stores/buttons";
+import { useCategoryStore } from "@/stores/buttons";
+import { CATEGORIES } from "@/models/categories.model";
 const categories = useCategoryStore();
 const { t } = useI18n();
 
@@ -15,11 +15,11 @@ const containerHeight = ref("100%");
 watch(
   () => categories.category,
   (newValue) => {
-    if (newValue === Category.WEB) {
+    if (newValue === CATEGORIES.WEB) {
       containerHeight.value = "100%";
       WebAnimation.value = "animate__animated animate__slideInLeft";
       VideoGamesAnimation.value = "animate__animated animate__slideOutRight";
-    } else if (newValue === Category.VIDEOGAMES) {
+    } else if (newValue === CATEGORIES.VIDEOGAMES) {
       containerHeight.value = "1286px";
       WebAnimation.value = "animate__animated animate__slideOutLeft";
       VideoGamesAnimation.value = "animate__animated animate__slideInRight";
@@ -30,48 +30,33 @@ watch(
 
 <template>
   <div class="projects">
-    <h2 class="text-center mb-0">
+    <h2 class="text-center mb-3">
       {{ t("landing.projects.title") }}
     </h2>
-    <CategorySelector />
-    <div id="projectsCarousel" class="slide h-100">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="projects__card--left">
-            <CardComponent
-              v-for="(item, index) in ALL_CATEGORIES[0]"
-              :key="index"
-              :title="item.title"
-              :emoji="item.emoji"
-              :text="item.description"
-              :tags="item.tags"
-              :links="item.links"
-              :backgroud_image="item.backgroud_image"
-              :titleColor="item.color"
-            />
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="projects__card--left">
-            <CardComponent
-              v-for="(item, index) in ALL_CATEGORIES[1]"
-              :key="index"
-              :title="item.title"
-              :emoji="item.emoji"
-              :text="item.description"
-              :tags="item.tags"
-              :links="item.links"
-              :backgroud_image="item.backgroud_image"
-              :titleColor="item.color"
-            />
-          </div>
-        </div>
-      </div>
+    <p class="projects__description mb-3">
+      {{ t("landing.projects.description") }}
+    </p>
+    <!-- <CategorySelector /> -->
+    <div class="projects__card">
+      <CardComponent
+        v-for="(item, index) in [...ALL_CATEGORIES[0], ...ALL_CATEGORIES[1]]"
+        :key="index"
+        :title="item.title"
+        :emoji="item.emoji"
+        :text="item.description"
+        :tags="item.tags"
+        :links="item.links"
+        :backgroud_image="item.backgroud_image"
+        :titleColor="item.color"
+      />
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
 .projects {
   padding-top: 70px;
   position: relative;
@@ -79,24 +64,10 @@ watch(
   width: 100%;
   flex-direction: column;
   gap: 16px;
-  &__sections {
-    display: flex;
-    overflow: hidden;
-    //cut the overflow
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
+  &__description {
+    text-align: justify;
   }
-  &__card--rigth {
-    //move card to the left
-    position: absolute;
-    right: 0;
-    top: 0;
-    //use the keyframes
-  }
-  &__card--left,
-  &__card--rigth {
+  &__card {
     gap: 16px;
     width: 100%;
     display: flex;
@@ -105,15 +76,12 @@ watch(
     justify-content: center;
   }
 }
-.selector {
-  align-items: center;
-  color: $background-light;
-  border-radius: 8px;
-  background-color: $background-black-1;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding: 8px 8px;
-  gap: 8px;
+
+@include media-breakpoint-up(sm) {
+  .projects {
+    &__description {
+      text-align: center;
+    }
+  }
 }
 </style>

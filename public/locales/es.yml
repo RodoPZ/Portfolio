@@ -1,0 +1,102 @@
+landing:
+  banner:
+    skills: Habilidades
+  buttons:
+    resume: Resumen
+    send: Enviar
+  navbar:
+    about: Acerca de
+    skills: Habilidades
+    projects: Proyectos
+    contact_me: ¡Contáctame!
+  hero:
+    name: RODOLFO PINEDO SUÁREZ
+    title: Desarrollador Full Stack
+    description: >-
+      Soy un desarrollador Full Stack con experiencia en React y Ruby, apasionado por el desarrollo web y 
+      siempre dispuesto a aprender nuevas tecnologías. Actualmente, estoy ampliando mis habilidades y me siento preparado para trabajar con Vue.js. 
+  skills:
+    title: Habilidades
+    description: >- 
+      En mi rol como desarrollador full-stack, he acumulado experiencia en el front-end con React y Vue.js, 
+      así como en el back-end con Ruby. Mi dedicación al aprendizaje continuo me impulsa a explorar y adoptar nuevas 
+      tecnologías de manera constante.
+    languages: Lenguajes
+    technologies: Tecnologías
+  projects:
+    title: Proyectos
+    description: A lo largo de mi trayectoria, he llevado a cabo diversos proyectos personales que reflejan mi pasión y habilidades como desarrollador
+    web_apps: Aplicaciones web
+    videogames: Videojuegos
+    portfolio:
+      title: Portafolio
+      description: |
+        Mi portafolio... ¡Este portafolio! Hecho con Vue, creado para mostrar mis proyectos y conocimientos al mundo.
+        - ¡Contáctame! ¡Hagamos algo juntos!
+    weather_app:
+      title: Weather App
+      description: |
+        Aplicación del clima que te permite consultar las condiciones climáticas de cualquier parte del mundo. 
+        - Diseñado en Figma, desarrollado usando React y empaquetado con Vite.
+        - Los datos se obtuvieron de la API 'WeatherApi'.
+    petgram:
+      title: Petgram
+      description: |
+        Aplicación web clon de Instagram para mascotas construida para practicar mis habilidades con React.
+        - Desarrollado usando React, empaquetado usando Webpack y desplegado en Github Pages.
+        - Utiliza una API GraphQL gestionada con Apollo Client y la sesión y los datos son persistentes.
+    movieApi:
+      title: MovieAPI
+      description: |
+        Aplicación web que te permite buscar películas y series. Desarrollado usando puro Typescript, HTML y CSS.
+        - Los datos se obtuvieron de la API 'TMDB API'.
+    cashflow:
+      title: Cashflow
+      description: |
+        Aplicación web sencilla que te permite gestionar tus finanzas personales. Desarrollado usando Vue.
+        - Fue mi primera vez usando vue.
+    todo_react:
+      title: Todo React
+      description: |
+        Aplicación de tareas desarrollada usando puro React.
+        - Esta fue mi primera aplicación web usando React, la hice siguiendo los tutoriales de #Platzi.
+    platzi_conf:
+      title: Platzi Conf
+      description: |
+        Esta es una de las primeras páginas que hice, fue hecha usando puro HTML y CSS.
+        - Lo hice siguiendo un curso de Platzi. ¡Me ayudaron mucho a empezar en el mundo del desarrollo web!.
+    farm_defence:
+      title:  Farm Defence
+      description: |
+        Un juego de defensa de torres donde defiendes tu granja de monstruos malvados. 
+        - Creado usando el motor Godot y GDScript. 
+        - A pesar de perder la fecha límite de un game jam, lo terminamos por amor al juego.
+    clicker_miner:
+      title: Clicker Miner
+      description: |
+        Un juego de clicker donde minas minerales y los vendes para comprar mejoras con estética de Gameboy.
+        - Presentamos este juego a la game jam GBJAM9 y nos clasificamos 25/42.
+        - Nuestro juego tiene más de 2000 visitas en itch.io y newgrounds.
+    lacking_light:
+      title: Lacking Light
+      description: |
+        Un roguelike de 8 bits de Godot con mecánicas de oscuridad donde tienes que recoger llaves para escapar de la mazmorra.
+        - Mantén tu antorcha encendida y cuidado con los monstruos que acechan en la oscuridad...
+        - Presentamos este juego a la Mini jam 98 game jam y ganamos un tercer lugar!!!
+  contact_me:
+    title: ¡Contáctame!
+    description: |
+      Hola. Gracias por revisar mi portafolio. Si tienes alguna pregunta, sugerencia o quieres ponerte en contacto, 
+      no dudes en contactarme. Me encantaría saber de ti!.
+    form:
+      name: Nombre
+      name_placeholder: Tu nombre
+      email: Correo electrónico
+      email_placeholder: Tu correo electrónico
+      subject: Asunto
+      subject_placeholder: Asunto
+      message: Mensaje
+      message_placeholder: Tu mensaje...
+  footer:
+    job_title: Desarrollador Full Stack
+    subtitle: Diseñado y construido por RodoPZ 

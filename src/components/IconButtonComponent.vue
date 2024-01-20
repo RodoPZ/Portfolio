@@ -2,9 +2,9 @@
 import FigmaIcon from "@/assets/icons/FigmaIcon.vue";
 import GithubIcon from "@/assets/icons/GithubIcon.vue";
 import WebIcon from "@/assets/icons/WebIcon.vue";
-import type { IconButtons } from "@/models/IconButton.model";
+import type { ICON_BUTTONS } from "@/models/IconButton.model";
 defineProps<{
-  text: IconButtons;
+  text: ICON_BUTTONS;
   link: string | null;
 }>();
 </script>
