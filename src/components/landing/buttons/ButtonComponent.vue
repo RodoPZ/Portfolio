@@ -42,7 +42,7 @@ defineProps({
   width: fit-content;
   max-width: 320px;
   background-color: transparent;
-  border: 2px solid $background-light;
+  border: 2px solid $body-bg-dark;
   border-radius: 4px;
   padding: 4px 8px;
   gap: 12px;
@@ -52,8 +52,19 @@ defineProps({
   }
   &:hover,
   &:focus {
-    color: $primary-dark;
-    border: 2px solid $primary-dark;
+    color: $primary;
+    border: 2px solid $primary;
+  }
+}
+
+[data-bs-theme="dark"] {
+  .btn {
+    border: 2px solid $body-bg;
+    &:hover,
+    &:focus {
+      color: $primary-dark;
+      border: 2px solid $primary-dark;
+    }
   }
 }
 </style>

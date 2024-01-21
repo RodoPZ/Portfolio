@@ -8,9 +8,11 @@ export enum TAG_NAMES {
   TYPESCRIPT = "TypeScript",
   SASS = "Sass",
   API = "API REST",
+  FLUTTER = "Flutter",
   // GraphQL = "GraphQL API",
   BOOTSTRAP = "Boostrap",
   GODOT = "Godot",
+  DART = "Dart",
 }
 
 export const tags = {
@@ -73,5 +75,15 @@ export const tags = {
     backgroundColor: "#478CBF",
     color: "#000",
     text: TAG_NAMES.GODOT,
+  },
+  [TAG_NAMES.FLUTTER]: {
+    backgroundColor: "#47C5FB",
+    color: "#000",
+    text: TAG_NAMES.FLUTTER,
+  },
+  [TAG_NAMES.DART]: {
+    backgroundColor: "#03599C",
+    color: "#FFF",
+    text: TAG_NAMES.DART,
   },
 };

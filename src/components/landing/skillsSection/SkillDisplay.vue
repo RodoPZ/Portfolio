@@ -32,7 +32,7 @@ defineProps(["list", "title"]);
 }
 .skillDisplay {
   flex-direction: column;
-  background-color: $background-black-1;
+  background-color: $background-light-1;
   align-items: center;
   display: flex;
   width: 85px;
@@ -71,6 +71,12 @@ defineProps(["list", "title"]);
       width: 75px;
       height: 75px;
     }
+  }
+}
+
+[data-bs-theme="dark"] {
+  .skillDisplay {
+    background-color: $background-black-1;
   }
 }
 </style>

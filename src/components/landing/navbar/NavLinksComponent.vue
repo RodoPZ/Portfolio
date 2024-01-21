@@ -5,7 +5,9 @@ import { useMobileMenuStore } from "@/stores/buttons";
 import { useModeStore } from "@/stores/mode";
 import i18n from "@/plugins/i18n";
 import { LANGUAGES } from "@/models/languages.model";
-import { MODES } from "@/models/modes.model";
+import { MODES, MODE_ICONS } from "@/models/modes.model";
+import { computed } from "vue";
+
 const { t } = useI18n();
 const mobileMenu = useMobileMenuStore();
 const mode = useModeStore();
@@ -22,9 +24,8 @@ const handleChangeLanguage = () => {
 };
 
 const handleChangeMode = () => {
-  mode.mode === MODES.DARK
-    ? mode.changeMode(MODES.LIGHT)
-    : mode.changeMode(MODES.DARK);
+  const newMode = mode.mode === MODES.DARK ? MODES.LIGHT : MODES.DARK;
+  mode.changeMode(newMode);
 
   // get html element
   // get html element
@@ -33,13 +34,19 @@ const handleChangeMode = () => {
   // change "data-bs-theme" attribute
   htmlElement.setAttribute("data-bs-theme", mode.mode);
 };
+
+const modeIcons = computed(() => {
+  return mode.mode === MODES.DARK
+    ? MODE_ICONS.DARK_MODE
+    : MODE_ICONS.LIGHT_MODE;
+});
 </script>
 
 <template>
   <div v-if="mobileMenu.mobileMenu" class="navlinks__container">
     <ButtonComponent
       :handleClick="handleChangeMode"
-      iconName="dark_mode"
+      :iconName="modeIcons"
       :style="'border-0'"
     />
     <ButtonComponent
@@ -48,22 +55,22 @@ const handleChangeMode = () => {
       iconName="translate"
     />
   </div>
-  <a @click="onClick" href="#About"
+  <a href="#About"
     ><p>{{ t("landing.navbar.about") }}</p></a
   >
-  <a @click="onClick" href="#Skills"
+  <a href="#Skills"
     ><p>{{ t("landing.navbar.skills") }}</p></a
   >
-  <a @click="onClick" href="#Projects"
+  <a href="#Projects"
     ><p>{{ t("landing.navbar.projects") }}</p></a
   >
-  <a @click="onClick" href="#ContactMe"
+  <a href="#ContactMe"
     ><p>{{ t("landing.navbar.contact_me") }}</p></a
   >
   <div v-if="!mobileMenu.mobileMenu" class="navlinks__container">
     <ButtonComponent
       :handleClick="handleChangeMode"
-      iconName="dark_mode"
+      :iconName="modeIcons"
       :style="'border-0'"
     />
     <ButtonComponent

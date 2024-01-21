@@ -38,13 +38,15 @@ for (let index = 1; index <= 3; index++) {
   flex-direction: column;
   width: fit-content;
   margin-left: auto;
+  justify-content: center;
+
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    color: $primary-dark;
+    color: $primary;
   }
   &__title {
     display: flex;
@@ -52,6 +54,14 @@ for (let index = 1; index <= 3; index++) {
     margin: 0px;
     width: 100%;
     text-align: right;
+  }
+}
+
+[data-bs-theme="dark"] {
+  .stars {
+    &__container {
+      color: $primary-dark;
+    }
   }
 }
 </style>

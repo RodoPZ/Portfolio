@@ -28,7 +28,7 @@ const handleClick = () => {
       <ButtonComponent
         :iconName="'close'"
         @click="handleClick"
-        :style="'text-black border-0'"
+        :style="'text-body border-0'"
       />
     </div>
   </div>

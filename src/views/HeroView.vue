@@ -23,10 +23,10 @@ onMounted(() => {
 <template>
   <div class="hero d-flex flex-column justify-content-center">
     <div class="hero__main d-flex flex-column">
-      <h1 class="hero__title text-center text-primary m-0">
+      <h1 class="hero__title text-center m-0">
         {{ t("landing.hero.name") }}
       </h1>
-      <h2 class="hero__subtitle text-center text-secondary m-0">
+      <h2 class="hero__subtitle text-center m-0">
         {{ t("landing.hero.title") }}
       </h2>
       <p class="hero__description m-0">
@@ -66,9 +66,11 @@ onMounted(() => {
     gap: 12px;
   }
   &__title {
+    color: $primary;
     font-size: 30px;
   }
   &__subtitle {
+    color: $secondary-dark;
     font-size: 28px;
   }
   &__description {
@@ -100,6 +102,17 @@ onMounted(() => {
 
   .material-symbols-outlined {
     font-size: rfs-fluid-value(3rem);
+  }
+}
+
+[data-bs-theme="dark"] {
+  .hero {
+    &__title {
+      color: $primary-dark;
+    }
+    &__subtitle {
+      color: $secondary;
+    }
   }
 }
 </style>

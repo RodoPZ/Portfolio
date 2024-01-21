@@ -9,7 +9,7 @@ import FooterView from "./views/FooterView.vue";
 
 <template>
   <header>
-    <nav>
+    <nav class="bg-body">
       <NavbarView />
     </nav>
   </header>
@@ -41,7 +41,7 @@ import FooterView from "./views/FooterView.vue";
   align-items: flex-start;
 }
 #About {
-  background-color: $background-black-1;
+  background-color: $background-light-1;
   margin: 0;
   max-width: none;
   display: flex;
@@ -68,7 +68,12 @@ nav {
   position: fixed;
   display: flex;
   justify-content: center;
-  background-color: $body-bg;
   z-index: 2;
+}
+
+[data-bs-theme="dark"] {
+  #About {
+    background-color: $background-black-1;
+  }
 }
 </style>

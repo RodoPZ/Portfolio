@@ -2,19 +2,11 @@
 import IconButtonComponent from "@/components/IconButtonComponent.vue";
 import TagsComponent from "./TagsComponent.vue";
 
-defineProps([
-  "title",
-  "text",
-  "tags",
-  "links",
-  "titleColor",
-  "backgroud_image",
-  "emoji",
-]);
+defineProps(["title", "text", "tags", "links", "titleColor", "emoji"]);
 </script>
 
 <template>
-  <div class="card" :style="{ backgroundImage: `url(${backgroud_image})` }">
+  <div class="card">
     <div class="card__background">
       <div class="card__foreground">
         <div class="d-flex align-items-center justify-content-between w-100">
@@ -65,18 +57,16 @@ defineProps([
   display: flex;
   align-items: flex-start;
   border-radius: 8px;
-  background-color: $background-black-1;
   height: 500px;
   &__background {
-    border: 2px solid $background-light-1;
+    border: 2px solid $background-black-1;
     padding: 8px;
     height: inherit;
     border-radius: 8px;
-    background-color: rgba(31, 38, 51, 0.5);
     backdrop-filter: blur(4px);
   }
   &__foreground {
-    background-color: rgba(31, 38, 51, 0.8);
+    background-color: $background-light-1;
     border-radius: 8px;
     padding: 8px;
     height: calc(500px - 16px);
@@ -130,6 +120,17 @@ defineProps([
 @include media-breakpoint-up(lg) {
   .card {
     width: calc(33.33% - 12px);
+  }
+}
+
+[data-bs-theme="dark"] {
+  .card {
+    &__background {
+      border: 2px solid $background-light-1;
+    }
+    &__foreground {
+      background-color: $background-black-1;
+    }
   }
 }
 </style>

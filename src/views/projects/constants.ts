@@ -5,11 +5,27 @@ const { t } = i18n.global;
 
 export const webProjectList = [
   {
+    title: "TT",
+    emoji: "👨‍🏫🧑‍🎓",
+    description: t("landing.projects.portfolio.description"),
+    tags: [TAG_NAMES.FLUTTER, TAG_NAMES.DART],
+    color: "#47faff",
+    darkColor: "#004278",
+    links: [
+      { name: ICON_BUTTONS.GITHUB, link: "https://github.com/RodoPZ/TT2-App" },
+      {
+        name: ICON_BUTTONS.LINK,
+        link: "https://drive.google.com/file/d/1upI9DDdjpoGhQ_D8L4jTMq09jLeLlDaJ/view?pli=1",
+      },
+    ],
+  },
+  {
     title: t("landing.projects.portfolio.title"),
     emoji: "💼🖥️",
     description: t("landing.projects.portfolio.description"),
     tags: [TAG_NAMES.VUE],
     color: "#ffde2a",
+    darkColor: "#453e00",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -18,7 +34,6 @@ export const webProjectList = [
       { name: ICON_BUTTONS.GITHUB, link: null },
       { name: ICON_BUTTONS.WEB, link: null },
     ],
-    backgroud_image: "src/assets/images/portfolio.png",
   },
   {
     title: t("landing.projects.weather_app.title"),
@@ -32,6 +47,7 @@ export const webProjectList = [
       TAG_NAMES.REDUX,
     ],
     color: "#83c9f4",
+    darkColor: "#01426a",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -46,7 +62,6 @@ export const webProjectList = [
         link: "https://rodopz-weatherapp.netlify.app/London",
       },
     ],
-    backgroud_image: "src/assets/images/weatherApp.png",
   },
   {
     title: t("landing.projects.petgram.title"),
@@ -54,6 +69,7 @@ export const webProjectList = [
     description: t("landing.projects.petgram.description"),
     tags: [TAG_NAMES.REACT, TAG_NAMES.SASS, TAG_NAMES.REDUX],
     color: "#ff11d9",
+    darkColor: "#7e006a",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -68,7 +84,6 @@ export const webProjectList = [
         link: "https://rodopz.GITHUB.io/Petgram/",
       },
     ],
-    backgroud_image: "src/assets/images/petgram.png",
   },
   {
     title: t("landing.projects.movieApi.title"),
@@ -76,6 +91,7 @@ export const webProjectList = [
     description: t("landing.projects.movieApi.description"),
     tags: [TAG_NAMES.TYPESCRIPT],
     color: "#e0fbfc",
+    darkColor: "#313131",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -90,7 +106,6 @@ export const webProjectList = [
         link: "https://rodopz-movieapi.netlify.app/",
       },
     ],
-    backgroud_image: "src/assets/images/movieApi.png",
   },
   {
     title: t("landing.projects.cashflow.title"),
@@ -98,6 +113,7 @@ export const webProjectList = [
     description: t("landing.projects.cashflow.description"),
     tags: [TAG_NAMES.VUE, TAG_NAMES.TYPESCRIPT],
     color: "#04b500",
+    darkColor: "#024700",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -112,7 +128,6 @@ export const webProjectList = [
         link: "https://rodopz-cashflow.netlify.app/",
       },
     ],
-    backgroud_image: "src/assets/images/cashflow.png",
   },
   {
     title: t("landing.projects.todo_react.title"),
@@ -120,6 +135,7 @@ export const webProjectList = [
     description: t("landing.projects.todo_react.description"),
     tags: [TAG_NAMES.REACT],
     color: "#ffda95",
+    darkColor: "#443926",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -134,7 +150,6 @@ export const webProjectList = [
         link: "https://rodopz.GITHUB.io/TODO_React/#/",
       },
     ],
-    backgroud_image: "src/assets/images/todoReact.png",
   },
   {
     title: t("landing.projects.platzi_conf.title"),
@@ -142,6 +157,7 @@ export const webProjectList = [
     description: t("landing.projects.platzi_conf.description"),
     tags: [TAG_NAMES.BOOTSTRAP, TAG_NAMES.SASS],
     color: "#82ad36",
+    darkColor: "#2b4400",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -156,7 +172,6 @@ export const webProjectList = [
         link: "https://rodopz.GITHUB.io/Platzi-conf/",
       },
     ],
-    backgroud_image: "src/assets/images/platziConf.png",
   },
 ];
 
@@ -167,6 +182,7 @@ export const videogamesProjectList = [
     description: t("landing.projects.farm_defence.description"),
     tags: [TAG_NAMES.GODOT],
     color: "#6dabff",
+    darkColor: "#003a89",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -181,7 +197,6 @@ export const videogamesProjectList = [
         link: "https://croobat.itch.io/farm-defense",
       },
     ],
-    backgroud_image: "src/assets/images/farmDefense.png",
   },
   {
     title: t("landing.projects.clicker_miner.title"),
@@ -189,6 +204,7 @@ export const videogamesProjectList = [
     description: t("landing.projects.clicker_miner.description"),
     tags: [TAG_NAMES.GODOT],
     color: "#b4ff94",
+    darkColor: "#174404",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -203,7 +219,6 @@ export const videogamesProjectList = [
         link: "https://croobat.itch.io/clicker-miner",
       },
     ],
-    backgroud_image: "src/assets/images/clickerMiner.png",
   },
   {
     title: t("landing.projects.lacking_light.title"),
@@ -211,6 +226,7 @@ export const videogamesProjectList = [
     description: t("landing.projects.lacking_light.description"),
     tags: [TAG_NAMES.GODOT],
     color: "#f6ffc6",
+    darkColor: "#393e21",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
@@ -225,7 +241,6 @@ export const videogamesProjectList = [
         link: "https://croobat.itch.io/lacking-light",
       },
     ],
-    backgroud_image: "src/assets/images/lackingLight.png",
   },
 ];
 

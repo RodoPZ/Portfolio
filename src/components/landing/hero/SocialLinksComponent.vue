@@ -11,21 +11,21 @@ const handleClick = () => {
 </script>
 
 <template>
-  <div class="Medialinks">
+  <div class="medialinks">
     <a href="https://www.linkedin.com/in/rodopz/">
-      <LinkedInIcon class="Medialinks__link" :size="size" />
+      <LinkedInIcon class="medialinks__link" :size="size" />
     </a>
     <button class="bg-transparent border-0">
-      <MailIcon class="Medialinks__link" :size="size" @click="handleClick" />
+      <MailIcon class="medialinks__link" :size="size" @click="handleClick" />
     </button>
     <a href="https://github.com/RodoPZ">
-      <GithubIcon class="Medialinks__link" :size="size"
+      <GithubIcon class="medialinks__link" :size="size"
     /></a>
   </div>
 </template>
 
 <style scoped lang="scss">
-.Medialinks {
+.medialinks {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +36,14 @@ const handleClick = () => {
     // on hover change color to primary
     &:hover {
       fill: $primary;
+    }
+  }
+}
+
+[data-bs-theme="dark"] {
+  .medialinks {
+    &__link {
+      fill: $body-color-dark;
     }
   }
 }

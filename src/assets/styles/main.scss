@@ -2,11 +2,9 @@
 
 a{
   text-emphasis: none;
-  color: $body-color;
   text-decoration: none;
   // on hover
   &:hover {
-    color: $primary;
     text-decoration: none;
   }
 }

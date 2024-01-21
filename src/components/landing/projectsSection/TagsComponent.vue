@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { tagNames } from "@/models/tags.model";
+import type { TAG_NAMES } from "@/models/tags.model";
 import { tags } from "@/models/tags.model";
 defineProps<{
-  text: tagNames;
+  text: TAG_NAMES;
 }>();
 </script>
 

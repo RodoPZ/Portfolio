@@ -5,12 +5,16 @@ import { ALL_CATEGORIES } from "./constants";
 import { useI18n } from "vue-i18n";
 import { useCategoryStore } from "@/stores/buttons";
 import { CATEGORIES } from "@/models/categories.model";
+import { useModeStore } from "@/stores/mode";
+import { MODES } from "@/models/modes.model";
 const categories = useCategoryStore();
 const { t } = useI18n();
 
 const WebAnimation = ref("");
 const VideoGamesAnimation = ref("animate__animated animate__slideOutRight");
 const containerHeight = ref("100%");
+
+const mode = useModeStore();
 
 watch(
   () => categories.category,
@@ -46,8 +50,7 @@ watch(
         :text="item.description"
         :tags="item.tags"
         :links="item.links"
-        :backgroud_image="item.backgroud_image"
-        :titleColor="item.color"
+        :titleColor="mode.mode == MODES.DARK ? item.color : item.darkColor"
       />
     </div>
   </div>

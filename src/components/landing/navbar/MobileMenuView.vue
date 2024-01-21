@@ -39,6 +39,10 @@ watchEffect(() => {
 </template>
 
 <style scoped lang="scss">
+@import "@bootstrap/scss/functions";
+@import "@bootstrap/scss/variables";
+@import "@bootstrap/scss/mixins";
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   // on hover change color to primary and point
@@ -52,7 +56,6 @@ watchEffect(() => {
     opacity: 0;
     display: flex;
     position: absolute;
-    background-color: $background-black-1;
     height: 100vh;
     width: 65vw;
     top: 0px;
@@ -61,6 +64,7 @@ watchEffect(() => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $background-light-1;
   }
   &__filter {
     position: absolute;
@@ -81,5 +85,13 @@ watchEffect(() => {
 .animate__animated.animate__fadeInRight,
 .animate__animated.animate__fadeOutRight {
   --animate-duration: 0.3s;
+}
+
+[data-bs-theme="dark"] {
+  .mobileMenu {
+    &__menu {
+      background-color: $background-black-1;
+    }
+  }
 }
 </style>

@@ -4,9 +4,9 @@ defineProps(["text"]);
 
 <template>
   <div class="crt">
-    <p class="crt__item crt__Arrow">></p>
-    <p class="crt__item crt__Text">{{ text }}</p>
-    <p class="crt__item crt__Line">_</p>
+    <p class="crt__item crt__arrow">></p>
+    <p class="crt__item crt__text">{{ text }}</p>
+    <p class="crt__item crt__line">_</p>
   </div>
 </template>
 
@@ -19,49 +19,69 @@ defineProps(["text"]);
   align-items: center;
   justify-content: center;
   position: relative;
-}
-.crt__Arrow {
-  color: #00fd55;
-  animation: textShadow 1.6s infinite;
-  text-shadow: 0 0 6px #00fd55;
-}
-
-.crt__Line {
-  animation: blink 1s infinite, textShadow 1.6s infinite;
-  color: #edf2f4;
-  text-shadow: 0 0 6px white;
-}
-
-.crt__Text {
-  color: #edf2f4;
-  text-shadow: 0 0 6px white;
-}
-
-.crt__item {
-  display: inline-block;
-  font: 1.5rem "Inconsolata", monospace;
-  margin: 0;
-  width: auto;
-
-  &::after {
-    content: "";
+  &__line {
+    animation: blink 1s infinite, textShadow 1.6s infinite;
+    color: $body-bg-dark;
+    text-shadow: 0 0 6px white;
+  }
+  &__arrow {
+    color: #00fd55;
+    animation: textShadow 1.6s infinite;
+    text-shadow: 0 0 6px #00fd55;
+  }
+  &__item {
     display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(
-      0deg,
-      rgba(#293241, 0.5),
-      rgba(#293241, 0.5) 1px,
-      transparent 1px,
-      transparent 2px
-    );
-    animation: flicker 0.5s infinite;
-    pointer-events: none;
+    font: 1.5rem "Inconsolata", monospace;
+    margin: 0;
+    width: auto;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba($body-bg, 0.5),
+        rgba($body-bg, 0.5) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      animation: flicker 0.5s infinite;
+      pointer-events: none;
+    }
+  }
+  &__text {
+    color: $body-bg-dark;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
   }
 }
+
+[data-bs-theme="dark"] {
+  .crt {
+    &__text {
+      color: $body-bg;
+    }
+    &__line {
+      color: $body-bg;
+    }
+    &__item {
+      &::after {
+        background: repeating-linear-gradient(
+          0deg,
+          rgba($body-color, 0.5),
+          rgba($body-color, 0.5) 1px,
+          transparent 1px,
+          transparent 2px
+        );
+      }
+    }
+  }
+}
+
 ::selection {
   background: #0080ff;
   text-shadow: none;

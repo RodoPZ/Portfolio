@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useCategoryStore } from "@/stores/buttons";
-import { CATEGORIES } from "@/stores/buttons";
+import { CATEGORIES } from "@/models/categories.model";
 import { Carousel } from "bootstrap";
 import { onMounted, ref } from "vue";
 import { useI18n } from "vue-i18n";

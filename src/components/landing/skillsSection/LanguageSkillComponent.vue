@@ -17,7 +17,7 @@ defineProps(["list", "title"]);
         :alt="item.name + ' logo'"
       />
       <p class="languageSkill__text">{{ item.name }}</p>
-      <div class="d-flex justify-content-center">
+      <div class="d-flex">
         <StarsComponent :stars="item.stars" />
       </div>
     </div>
@@ -32,7 +32,7 @@ defineProps(["list", "title"]);
   grid-template-columns: 1fr 1fr 1fr;
   padding: 8px;
   border-radius: 8px;
-  background-color: #3e4754;
+  background-color: $background-light-1;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
   min-width: 280px;
@@ -40,7 +40,6 @@ defineProps(["list", "title"]);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center; /* Add this line */
     gap: 12px;
   }
   &__title {
@@ -56,6 +55,12 @@ defineProps(["list", "title"]);
     max-width: calc((100% / 2) - 12px);
     min-width: 280px;
     height: 75px;
+  }
+}
+
+[data-bs-theme="dark"] {
+  .languageSkill {
+    background-color: $background-black-1;
   }
 }
 </style>
