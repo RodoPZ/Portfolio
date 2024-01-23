@@ -39,7 +39,7 @@ onMounted(() => {
     </div>
     <span
       @click="scrollToSkills"
-      class="material-symbols-outlined text-primary slideInDown arrow-size"
+      class="material-symbols-outlined slideInDown arrow-size"
     >
       arrow_downward
     </span>
@@ -56,6 +56,7 @@ onMounted(() => {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
+  color: $primary;
   // add pointer
   cursor: pointer;
 }
@@ -106,6 +107,9 @@ onMounted(() => {
 }
 
 [data-bs-theme="dark"] {
+  .material-symbols-outlined {
+    color: $primary-dark;
+  }
   .hero {
     &__title {
       color: $primary-dark;
