@@ -34,7 +34,7 @@ const handleClick = () => {
     padding: 0px 8px;
     fill: $body-color;
     // on hover change color to primary
-    &:hover {
+    :hover {
       fill: $primary;
     }
   }
@@ -44,6 +44,9 @@ const handleClick = () => {
   .medialinks {
     &__link {
       fill: $body-color-dark;
+      :hover {
+        fill: $primary-dark;
+      }
     }
   }
 }

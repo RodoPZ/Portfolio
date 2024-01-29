@@ -7,8 +7,13 @@ export const webProjectList = [
   {
     title: "TT",
     emoji: "👨‍🏫🧑‍🎓",
-    description: t("landing.projects.portfolio.description"),
-    tags: [TAG_NAMES.FLUTTER, TAG_NAMES.DART],
+    description: t("landing.projects.tt.description"),
+    tags: [
+      TAG_NAMES.FLUTTER,
+      TAG_NAMES.DART,
+      TAG_NAMES.PYTHON,
+      TAG_NAMES.FIREBASE,
+    ],
     color: "#47faff",
     darkColor: "#004278",
     links: [
@@ -20,9 +25,9 @@ export const webProjectList = [
     ],
   },
   {
-    title: t("landing.projects.portfolio.title"),
+    title: t("landing.projects.tt.title"),
     emoji: "💼🖥️",
-    description: t("landing.projects.portfolio.description"),
+    description: t("landing.projects.tt.description"),
     tags: [TAG_NAMES.VUE],
     color: "#ffde2a",
     darkColor: "#453e00",

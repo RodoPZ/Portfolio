@@ -15,6 +15,10 @@ a{
   }
 }
 
+.text-sm{
+  font-size: .875rem;
+}
+
 h4 {
   font-size: rfs-fluid-value(0.9rem);
   margin-bottom: 0;
@@ -32,6 +36,10 @@ h4 {
   }
   h4{
     font-size: rfs-fluid-value(1rem);
+  }
+  
+  .text-sm{
+    font-size: 1rem;
   }
 }
 

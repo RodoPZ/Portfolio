@@ -21,7 +21,7 @@ defineProps(["title", "text", "tags", "links", "titleColor", "emoji"]);
           class="card__divider"
           :style="{ backgroundColor: titleColor }"
         ></div>
-        <p class="card__text">
+        <p class="card__text text-sm">
           {{ text }}
         </p>
         <div class="card__tagsContainer mb-1">
@@ -57,19 +57,17 @@ defineProps(["title", "text", "tags", "links", "titleColor", "emoji"]);
   display: flex;
   align-items: flex-start;
   border-radius: 8px;
-  height: 500px;
   &__background {
     border: 2px solid $background-black-1;
     padding: 8px;
     height: inherit;
     border-radius: 8px;
-    backdrop-filter: blur(4px);
   }
   &__foreground {
     background-color: $background-light-1;
     border-radius: 8px;
     padding: 8px;
-    height: calc(500px - 16px);
+    height: calc(370px - 16px);
     gap: 4px;
     display: flex;
     flex-direction: column;

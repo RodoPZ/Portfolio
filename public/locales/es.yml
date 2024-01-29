@@ -28,66 +28,57 @@ landing:
     description: A lo largo de mi trayectoria, he llevado a cabo diversos proyectos personales que reflejan mi pasión y habilidades como desarrollador
     web_apps: Aplicaciones web
     videogames: Videojuegos
+    tt:
+      title: TT
+      description: |
+        Mi proyecto de tesis de licenciatura, cuyo objetivo fué ayudar a las personas mayores a acordarse de tomar sus medicamentos. 
     portfolio:
       title: Portafolio
       description: |
         Mi portafolio... ¡Este portafolio! Hecho con Vue, creado para mostrar mis proyectos y conocimientos al mundo.
-        - ¡Contáctame! ¡Hagamos algo juntos!
     weather_app:
       title: Weather App
       description: |
-        Aplicación del clima que te permite consultar las condiciones climáticas de cualquier parte del mundo. 
-        - Diseñado en Figma, desarrollado usando React y empaquetado con Vite.
-        - Los datos se obtuvieron de la API 'WeatherApi'.
+        Aplicación del clima que te permite consultar las condiciones climáticas de cualquier parte del mundo usando la API 'WeatherApi'.
     petgram:
       title: Petgram
       description: |
         Aplicación web clon de Instagram para mascotas construida para practicar mis habilidades con React.
-        - Desarrollado usando React, empaquetado usando Webpack y desplegado en Github Pages.
-        - Utiliza una API GraphQL gestionada con Apollo Client y la sesión y los datos son persistentes.
     movieApi:
       title: MovieAPI
       description: |
-        Aplicación web que te permite buscar películas y series. Desarrollado usando puro Typescript, HTML y CSS.
-        - Los datos se obtuvieron de la API 'TMDB API'.
+        Aplicación web que te permite buscar películas y series. Desarrollado usando la API 'TMDB API'.
     cashflow:
       title: Cashflow
       description: |
         Aplicación web sencilla que te permite gestionar tus finanzas personales. Desarrollado usando Vue.
-        - Fue mi primera vez usando vue.
     todo_react:
       title: Todo React
       description: |
-        Aplicación de tareas desarrollada usando puro React.
-        - Esta fue mi primera aplicación web usando React, la hice siguiendo los tutoriales de #Platzi.
+        Aplicación de tareas desarrollada usando React, esta fue mi primera aplicación web usando React.
     platzi_conf:
       title: Platzi Conf
       description: |
-        Esta es una de las primeras páginas que hice, fue hecha usando puro HTML y CSS.
-        - Lo hice siguiendo un curso de Platzi. ¡Me ayudaron mucho a empezar en el mundo del desarrollo web!.
+        Esta es una de las primeras páginas que hice, fue hecha usando puro HTML y CSS, lo hice siguiendo un curso de Platzi.
     farm_defence:
       title:  Farm Defence
       description: |
-        Un juego de defensa de torres donde defiendes tu granja de monstruos malvados. 
-        - Creado usando el motor Godot y GDScript. 
-        - A pesar de perder la fecha límite de un game jam, lo terminamos por amor al juego.
+        Un juego de defensa de torres donde defiendes tu granja de monstruos malvados, creado usando el motor Godot y GDScript. 
     clicker_miner:
       title: Clicker Miner
       description: |
-        Un juego de clicker donde minas minerales y los vendes para comprar mejoras con estética de Gameboy.
-        - Presentamos este juego a la game jam GBJAM9 y nos clasificamos 25/42.
-        - Nuestro juego tiene más de 2000 visitas en itch.io y newgrounds.
+        Un juego clicker donde minas minerales y los vendes para comprar mejoras con estética de Gameboy.
+        Tiene más de 2000 visitas en itch.io y newgrounds.
     lacking_light:
       title: Lacking Light
       description: |
         Un roguelike de 8 bits de Godot con mecánicas de oscuridad donde tienes que recoger llaves para escapar de la mazmorra.
-        - Mantén tu antorcha encendida y cuidado con los monstruos que acechan en la oscuridad...
-        - Presentamos este juego a la Mini jam 98 game jam y ganamos un tercer lugar!!!
+        ganamos el tercer lugar en la Mini jam 98 game jam con este juego
   contact_me:
     title: ¡Contáctame!
     description: |
       Hola. Gracias por revisar mi portafolio. Si tienes alguna pregunta, sugerencia o quieres ponerte en contacto, 
-      no dudes en contactarme. Me encantaría saber de ti!.
+      no dudes en visitar los links de abajo. Me encantaría saber de ti!.
     form:
       name: Nombre
       name_placeholder: Tu nombre
