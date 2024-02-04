@@ -4,6 +4,8 @@ import { ref, onMounted } from "vue";
 import buttonComponent from "@landing/buttons/ButtonComponent.vue";
 import SocialLinksComponent from "@landing/hero/SocialLinksComponent.vue";
 import { useI18n } from "vue-i18n";
+import { downloadResume } from "@/views/utils";
+
 const { t } = useI18n();
 
 const Skills: Ref<HTMLElement | null> = ref(null);
@@ -34,7 +36,7 @@ onMounted(() => {
       </p>
       <SocialLinksComponent :size="'48px'" />
       <div class="hero__button">
-        <buttonComponent :title="'Resume'" />
+        <buttonComponent :title="'Resume'" :handleClick="downloadResume" />
       </div>
     </div>
     <span

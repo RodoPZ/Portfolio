@@ -7,16 +7,13 @@ import i18n from "@/plugins/i18n";
 import { LANGUAGES } from "@/models/languages.model";
 import { MODES, MODE_ICONS } from "@/models/modes.model";
 import { computed } from "vue";
+import { downloadResume } from "@/views/utils";
 
 const { t } = useI18n();
 const mobileMenu = useMobileMenuStore();
 const mode = useModeStore();
 
 let languageText = LANGUAGES.ES;
-
-const onClick = () => {
-  mobileMenu.setChangeMobileMenu();
-};
 
 const handleChangeLanguage = () => {
   i18n.global.locale.value = languageText =
@@ -80,7 +77,7 @@ const modeIcons = computed(() => {
     />
   </div>
   <div>
-    <ButtonComponent title="Resume" />
+    <ButtonComponent title="Resume" :handleClick="downloadResume" />
   </div>
 </template>
 
