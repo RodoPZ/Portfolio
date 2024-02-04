@@ -12,10 +12,7 @@ defineProps(["list", "title"]);
       :key="index"
       class="languageSkill d-flex"
     >
-      <img
-        :src="'./src/assets/logos/' + item.name + '.svg'"
-        :alt="item.name + ' logo'"
-      />
+      <img :src="'/logos/' + item.name + '.svg'" :alt="item.name + ' logo'" />
       <p class="languageSkill__text">{{ item.name }}</p>
       <div class="d-flex">
         <StarsComponent :stars="item.stars" />
