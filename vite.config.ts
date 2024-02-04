@@ -7,6 +7,7 @@ import path from "node:path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  publicDir: process.env.NODE_ENV === "production" ? "/REPO_NAME/" : "/",
   plugins: [
     vue(),
     VueI18nPlugin({

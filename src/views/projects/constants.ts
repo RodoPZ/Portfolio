@@ -3,8 +3,7 @@ import { TAG_NAMES } from "@/models/tags.model";
 import i18n from "@/plugins/i18n";
 import { computed } from "vue";
 
-const { t } = i18n.global;
-
+const { t } = i18n.global as any;
 export const projectList = computed(() => [
   {
     title: t("landing.projects.tt.title"),
