@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import CardComponent from "@landing/projectsSection/CardComponent.vue";
 import { ref, watch } from "vue";
-import { ALL_CATEGORIES } from "./constants";
+import { projectList } from "./constants";
 import { useI18n } from "vue-i18n";
 import { useCategoryStore } from "@/stores/buttons";
 import { CATEGORIES } from "@/models/categories.model";
@@ -43,7 +43,7 @@ watch(
     <!-- <CategorySelector /> -->
     <div class="projects__card">
       <CardComponent
-        v-for="(item, index) in [...ALL_CATEGORIES[0], ...ALL_CATEGORIES[1]]"
+        v-for="(item, index) in projectList"
         :key="index"
         :title="item.title"
         :emoji="item.emoji"

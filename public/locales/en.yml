@@ -1,3 +1,5 @@
+messages: 
+  in_progress: Page in progress!
 landing:
   banner:
     skills: Skills
@@ -8,84 +10,77 @@ landing:
     about: About
     skills: Skills
     projects: Projects
-    contact_me: Contact me!
+    contact_me: Contact Me!
   hero:
     name: RODOLFO PINEDO SUÁREZ
     title: Full Stack Developer
     description: >-
-      I'm a Full Stack Developer with expertise in React and Ruby, passionate about web development and 
-      always eager to learn new technologies. Currently, I'm expanding my skills and I feel prepared to work with Vue.js. 
+      I am a Full Stack developer with experience in React and Ruby, passionate about web development. 
+      I am always ready to learn new technologies and skills, whether for a project or as a hobby.
   skills:
     title: Skills
     description: >- 
-      Focused on front-end development with React and Vue.js, my back-end expertise centers around Ruby,
-      complemented by a strong foundation in MySQL and Firebase for database management. Currently expanding into Node.js,
-      I bring a versatile approach to crafting responsive and data-driven web applications.
+      In my role as a full-stack developer, I have accumulated experience in front-end development with React and Vue.js, 
+      as well as back-end development with Ruby. My dedication to continuous learning drives me to explore and adopt new 
+      technologies consistently.
     languages: Languages
     technologies: Technologies
   projects:
     title: Projects
-    web_apps: Web Apps
-    videogames: Videogames
+    description: Throughout my career, I have undertaken various personal projects that reflect my passion and skills as a developer.
+    web_apps: Web Applications
+    videogames: Video Games
+    tt:
+      title: TT
+      description: |
+        My undergraduate thesis project, aimed at helping elderly individuals remember to take their medications.
     portfolio:
       title: Portfolio
       description: |
-        My portfolio... This portfolio! Made with Vue, created to show my projects and knowledge to the world.
-        - Contact me! Let's do something together!
+        My portfolio... This portfolio! Built with Vue, created to showcase my projects and knowledge to the world.
     weather_app:
       title: Weather App
       description: |
-        Weather app that allows you to check the weather conditions of any part of the world. 
-        - Designed in Figma, developed using React and bundled with Vite.
-        - The data was fetched from the 'WeatherApi' API.
+        Weather application that allows you to check the weather conditions anywhere in the world using the 'WeatherApi' API.
     petgram:
       title: Petgram
       description: |
-        Instagram clone web app for pets built to practice my React skills.
-        - Developed using React, bundled using Webpack and deployed to Github Pages.
-        - It uses a GraphQL API managed with Apollo Client and the session and data are persistent.
+        Instagram clone web application for pets built to practice my skills with React.
     movieApi:
       title: MovieAPI
       description: |
-        Web app that allows you to search for movies and series. Developed using pure Typescript, HTML and CSS.
-        - The data was fetched from the 'TMDB API' API.
+        Web application that allows you to search for movies and series. Developed using the 'TMDB API'.
     cashflow:
       title: Cashflow
       description: |
-        Simple web app that allows you to manage your personal finances. Developed using Vue.
-        - It was my first time using vue.
+        Simple web application that allows you to manage your personal finances. Developed using Vue.
     todo_react:
       title: Todo React
       description: |
-        Todo app developed using pure React.
-        - This was my first web app using React, I made it following #Platzi tutorials.
+        Task application developed using React, this was my first web application using React.
     platzi_conf:
       title: Platzi Conf
       description: |
-        This is one of the first pages I ever made, it was made using pure HTML and CSS.
-        - I made it following a Platzi course. They helped me a lot to get started in the world of web development!!.
+        This is one of the first pages I made, it was created using pure HTML and CSS, following a Platzi course.
     farm_defence:
-      title: Farm Defence
+      title:  Farm Defence
       description: |
-        A Tower Defence game where you defend your farm from evil monsters. 
-        - Created using the Godot Engine and GDScript. 
-        - Despite missing a game jam deadline, we finished it for the love of the game.
+        Tower defense game where you defend your farm from evil monsters, created using the Godot engine and GDScript. 
     clicker_miner:
       title: Clicker Miner
       description: |
-        A clicker game where you mine minerals and sell them to buy upgrades with Gameboy aesthetics.
-        - We submitted this game to a the GBJAM9 game jam and got ranked 25/42.
-        - Our game has over 2000 views over at itch.io and newgrounds.
+        Clicker game where you mine minerals and sell them to buy upgrades with a Gameboy aesthetic.
+        It has over 2000 views on itch.io and newgrounds.
     lacking_light:
       title: Lacking Light
       description: |
-        A Godot 8-bit roguelike with darkness mechanics where you have to collect keys to escape the dungeon.
-        - Keep your torch lit and watch out for the monsters that lurk in the dark...
-        - We submited this game to the Mini jam 98 game jam and won a 3rd place!!!
+        8-bit Godot roguelike with darkness mechanics where you have to collect keys to escape from the dungeon.
+        We won third place in the Mini Jam 98 game jam with this game.
   contact_me:
-    title: Contact me!
+    title: Contact Me!
     description: |
-      Hey there. Thanks for checking out my portfolio. If you have any questions, suggestions or want to get in touch, feel free to shoot me an email. I'd love to hear from you.
+      Hi. Thanks for checking out my portfolio. If you have any questions, suggestions, or want to get in touch, 
+      feel free to visit the links below. I would love to hear from you!
     form:
       name: Name
       name_placeholder: Your name
@@ -97,4 +92,4 @@ landing:
       message_placeholder: Your message...
   footer:
     job_title: Full Stack Developer
-    subtitle: Designed and built by RodoPZ 
+    subtitle: Designed and built by RodoPZ

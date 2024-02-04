@@ -4,8 +4,10 @@ import MobileMenuView from "@landing/navbar/MobileMenuView.vue";
 import BannerComponent from "@/components/BannerComponent.vue";
 import { ref } from "vue";
 import ButtonComponent from "@/components/landing/buttons/ButtonComponent.vue";
+import { useI18n } from "vue-i18n";
 
 const alertState = ref(true);
+const { t } = useI18n();
 
 const handleClick = () => {
   alertState.value = false;
@@ -23,7 +25,7 @@ const handleClick = () => {
     <MobileMenuView class="mobileMenu" />
   </div>
   <div v-if="alertState" class="alert alert-warning w-100" role="alert">
-    <h6 class="alert__text m-0">⚠️Página en progreso!🚧</h6>
+    <h6 class="alert__text m-0">⚠️{{ t("messages.in_progress") }}🚧</h6>
     <div>
       <ButtonComponent
         :iconName="'close'"

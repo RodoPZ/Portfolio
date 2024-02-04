@@ -8,6 +8,4 @@ const i18n = createI18n({
   messages,
 });
 
-console.log(i18n.global.locale.value);
-
 export default i18n;

@@ -1,3 +1,5 @@
+messages: 
+  in_progress: ¡Página en progreso!
 landing:
   banner:
     skills: Habilidades
@@ -13,8 +15,8 @@ landing:
     name: RODOLFO PINEDO SUÁREZ
     title: Desarrollador Full Stack
     description: >-
-      Soy un desarrollador Full Stack con experiencia en React y Ruby, apasionado por el desarrollo web y 
-      siempre dispuesto a aprender nuevas tecnologías. Actualmente, estoy ampliando mis habilidades y me siento preparado para trabajar con Vue.js. 
+      Soy un desarrollador Full Stack con experiencia en React y Ruby, apasionado por el desarrollo web. 
+      Siempre estoy dispuesto a aprender nuevas tecnologías y habilidades, ya sea para algún proyecto o como hobby
   skills:
     title: Habilidades
     description: >- 
@@ -25,7 +27,7 @@ landing:
     technologies: Tecnologías
   projects:
     title: Proyectos
-    description: A lo largo de mi trayectoria, he llevado a cabo diversos proyectos personales que reflejan mi pasión y habilidades como desarrollador
+    description: A lo largo de mi trayectoria, he llevado a cabo diversos proyectos personales que reflejan mi pasión y habilidades como desarrollador.
     web_apps: Aplicaciones web
     videogames: Videojuegos
     tt:

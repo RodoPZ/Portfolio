@@ -1,11 +1,13 @@
 import { ICON_BUTTONS } from "@/models/IconButton.model";
 import { TAG_NAMES } from "@/models/tags.model";
 import i18n from "@/plugins/i18n";
+import { computed } from "vue";
+
 const { t } = i18n.global;
 
-export const webProjectList = [
+export const projectList = computed(() => [
   {
-    title: "TT",
+    title: t("landing.projects.tt.title"),
     emoji: "👨‍🏫🧑‍🎓",
     description: t("landing.projects.tt.description"),
     tags: [
@@ -25,18 +27,26 @@ export const webProjectList = [
     ],
   },
   {
-    title: t("landing.projects.tt.title"),
+    title: t("landing.projects.portfolio.title"),
     emoji: "💼🖥️",
-    description: t("landing.projects.tt.description"),
-    tags: [TAG_NAMES.VUE],
+    description: t("landing.projects.portfolio.description"),
+    tags: [
+      TAG_NAMES.VUE,
+      TAG_NAMES.TYPESCRIPT,
+      TAG_NAMES.SASS,
+      TAG_NAMES.BOOTSTRAP,
+    ],
     color: "#ffde2a",
     darkColor: "#453e00",
     links: [
       {
         name: ICON_BUTTONS.FIGMA,
-        link: "https://pictogrammers.com/library/mdi/",
+        link: "https://www.figma.com/file/ZjCFBtm0rJQJZPk1BGDG5p/Portfolio?type=design&node-id=43-91&mode=design",
       },
-      { name: ICON_BUTTONS.GITHUB, link: null },
+      {
+        name: ICON_BUTTONS.GITHUB,
+        link: "https://github.com/RodoPZ/Portfolio",
+      },
       { name: ICON_BUTTONS.WEB, link: null },
     ],
   },
@@ -178,9 +188,6 @@ export const webProjectList = [
       },
     ],
   },
-];
-
-export const videogamesProjectList = [
   {
     title: t("landing.projects.farm_defence.title"),
     emoji: "🐮💀",
@@ -247,6 +254,4 @@ export const videogamesProjectList = [
       },
     ],
   },
-];
-
-export const ALL_CATEGORIES = [webProjectList, videogamesProjectList];
+]);
