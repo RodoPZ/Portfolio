@@ -4,7 +4,7 @@ import messages from "@intlify/unplugin-vue-i18n/messages";
 const i18n = createI18n({
   globalInjection: true,
   legacy: false, // Usa el modo Composition API
-  locale: "es", // Idioma predeterminado
+  locale: "en", // Idioma predeterminado
   messages,
 });
 

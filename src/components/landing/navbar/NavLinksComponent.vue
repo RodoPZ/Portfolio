@@ -13,7 +13,7 @@ const { t } = useI18n();
 const mobileMenu = useMobileMenuStore();
 const mode = useModeStore();
 
-let languageText = LANGUAGES.ES;
+let languageText = i18n.global.locale.value;
 
 const handleChangeLanguage = () => {
   i18n.global.locale.value = languageText =
