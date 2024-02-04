@@ -1,0 +1,95 @@
+messages: 
+  in_progress: ¡Página en progreso!
+landing:
+  banner:
+    skills: Habilidades
+  buttons:
+    resume: Resumen
+    send: Enviar
+  navbar:
+    about: Acerca de
+    skills: Habilidades
+    projects: Proyectos
+    contact_me: ¡Contáctame!
+  hero:
+    name: RODOLFO PINEDO SUÁREZ
+    title: Desarrollador Full Stack
+    description: >-
+      Soy un desarrollador Full Stack con experiencia en React y Ruby, apasionado por el desarrollo web. 
+      Siempre estoy dispuesto a aprender nuevas tecnologías y habilidades, ya sea para algún proyecto o como hobby
+  skills:
+    title: Habilidades
+    description: >- 
+      En mi rol como desarrollador full-stack, he acumulado experiencia en el front-end con React y Vue.js, 
+      así como en el back-end con Ruby. Mi dedicación al aprendizaje continuo me impulsa a explorar y adoptar nuevas 
+      tecnologías de manera constante.
+    languages: Lenguajes
+    technologies: Tecnologías
+  projects:
+    title: Proyectos
+    description: A lo largo de mi trayectoria, he llevado a cabo diversos proyectos personales que reflejan mi pasión y habilidades como desarrollador.
+    web_apps: Aplicaciones web
+    videogames: Videojuegos
+    tt:
+      title: TT
+      description: |
+        Mi proyecto de tesis de licenciatura, cuyo objetivo fué ayudar a las personas mayores a acordarse de tomar sus medicamentos. 
+    portfolio:
+      title: Portafolio
+      description: |
+        Mi portafolio... ¡Este portafolio! Hecho con Vue, creado para mostrar mis proyectos y conocimientos al mundo.
+    weather_app:
+      title: Weather App
+      description: |
+        Aplicación del clima que te permite consultar las condiciones climáticas de cualquier parte del mundo usando la API 'WeatherApi'.
+    petgram:
+      title: Petgram
+      description: |
+        Aplicación web clon de Instagram para mascotas construida para practicar mis habilidades con React.
+    movieApi:
+      title: MovieAPI
+      description: |
+        Aplicación web que te permite buscar películas y series. Desarrollado usando la API 'TMDB API'.
+    cashflow:
+      title: Cashflow
+      description: |
+        Aplicación web sencilla que te permite gestionar tus finanzas personales. Desarrollado usando Vue.
+    todo_react:
+      title: Todo React
+      description: |
+        Aplicación de tareas desarrollada usando React, esta fue mi primera aplicación web usando React.
+    platzi_conf:
+      title: Platzi Conf
+      description: |
+        Esta es una de las primeras páginas que hice, fue hecha usando puro HTML y CSS, lo hice siguiendo un curso de Platzi.
+    farm_defence:
+      title:  Farm Defence
+      description: |
+        Un juego de defensa de torres donde defiendes tu granja de monstruos malvados, creado usando el motor Godot y GDScript. 
+    clicker_miner:
+      title: Clicker Miner
+      description: |
+        Un juego clicker donde minas minerales y los vendes para comprar mejoras con estética de Gameboy.
+        Tiene más de 2000 visitas en itch.io y newgrounds.
+    lacking_light:
+      title: Lacking Light
+      description: |
+        Un roguelike de 8 bits de Godot con mecánicas de oscuridad donde tienes que recoger llaves para escapar de la mazmorra.
+        ganamos el tercer lugar en la Mini jam 98 game jam con este juego
+  contact_me:
+    title: ¡Contáctame!
+    description: |
+      Hola. Gracias por revisar mi portafolio. Si tienes alguna pregunta, sugerencia o quieres ponerte en contacto, 
+      no dudes en visitar los links de abajo. Me encantaría saber de ti!.
+    form:
+      name: Nombre
+      name_placeholder: Tu nombre
+      email: Correo electrónico
+      email_placeholder: Tu correo electrónico
+      subject: Asunto
+      subject_placeholder: Asunto
+      message: Mensaje
+      message_placeholder: Tu mensaje...
+  footer:
+    job_title: Desarrollador Full Stack
+    subtitle: Diseñado y construido por RodoPZ 

@@ -1,0 +1,95 @@
+messages: 
+  in_progress: Page in progress!
+landing:
+  banner:
+    skills: Skills
+  buttons:
+    resume: Resume
+    send: Send
+  navbar:
+    about: About
+    skills: Skills
+    projects: Projects
+    contact_me: Contact Me!
+  hero:
+    name: RODOLFO PINEDO SUÁREZ
+    title: Full Stack Developer
+    description: >-
+      I am a Full Stack developer with experience in React and Ruby, passionate about web development. 
+      I am always ready to learn new technologies and skills, whether for a project or as a hobby.
+  skills:
+    title: Skills
+    description: >- 
+      In my role as a full-stack developer, I have accumulated experience in front-end development with React and Vue.js, 
+      as well as back-end development with Ruby. My dedication to continuous learning drives me to explore and adopt new 
+      technologies consistently.
+    languages: Languages
+    technologies: Technologies
+  projects:
+    title: Projects
+    description: Throughout my career, I have undertaken various personal projects that reflect my passion and skills as a developer.
+    web_apps: Web Applications
+    videogames: Video Games
+    tt:
+      title: TT
+      description: |
+        My undergraduate thesis project, aimed at helping elderly individuals remember to take their medications.
+    portfolio:
+      title: Portfolio
+      description: |
+        My portfolio... This portfolio! Built with Vue, created to showcase my projects and knowledge to the world.
+    weather_app:
+      title: Weather App
+      description: |
+        Weather application that allows you to check the weather conditions anywhere in the world using the 'WeatherApi' API.
+    petgram:
+      title: Petgram
+      description: |
+        Instagram clone web application for pets built to practice my skills with React.
+    movieApi:
+      title: MovieAPI
+      description: |
+        Web application that allows you to search for movies and series. Developed using the 'TMDB API'.
+    cashflow:
+      title: Cashflow
+      description: |
+        Simple web application that allows you to manage your personal finances. Developed using Vue.
+    todo_react:
+      title: Todo React
+      description: |
+        Task application developed using React, this was my first web application using React.
+    platzi_conf:
+      title: Platzi Conf
+      description: |
+        This is one of the first pages I made, it was created using pure HTML and CSS, following a Platzi course.
+    farm_defence:
+      title:  Farm Defence
+      description: |
+        Tower defense game where you defend your farm from evil monsters, created using the Godot engine and GDScript. 
+    clicker_miner:
+      title: Clicker Miner
+      description: |
+        Clicker game where you mine minerals and sell them to buy upgrades with a Gameboy aesthetic.
+        It has over 2000 views on itch.io and newgrounds.
+    lacking_light:
+      title: Lacking Light
+      description: |
+        8-bit Godot roguelike with darkness mechanics where you have to collect keys to escape from the dungeon.
+        We won third place in the Mini Jam 98 game jam with this game.
+  contact_me:
+    title: Contact Me!
+    description: |
+      Hi. Thanks for checking out my portfolio. If you have any questions, suggestions, or want to get in touch, 
+      feel free to visit the links below. I would love to hear from you!
+    form:
+      name: Name
+      name_placeholder: Your name
+      email: Email
+      email_placeholder: Your email
+      subject: Subject
+      subject_placeholder: Subject
+      message: Message
+      message_placeholder: Your message...
+  footer:
+    job_title: Full Stack Developer
+    subtitle: Designed and built by RodoPZ
