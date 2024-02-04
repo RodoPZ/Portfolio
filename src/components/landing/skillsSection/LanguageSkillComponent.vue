@@ -13,7 +13,7 @@ defineProps(["list", "title"]);
       class="languageSkill d-flex"
     >
       <img
-        :src="'@/src/assets/logos/' + item.name + '.svg'"
+        :src="'./src/assets/logos/' + item.name + '.svg'"
         :alt="item.name + ' logo'"
       />
       <p class="languageSkill__text">{{ item.name }}</p>

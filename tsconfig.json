@@ -10,5 +10,13 @@
     {
       "path": "./tsconfig.vitest.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@landing/*": ["./src/components/landing/*"],
+      "@bootstrap/*": ["./node_modules/bootstrap/*"],
+    }
+  }
 }

@@ -7,7 +7,6 @@ import path from "node:path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  publicDir: process.env.NODE_ENV === "production" ? "/REPO_NAME/" : "/",
   plugins: [
     vue(),
     VueI18nPlugin({
@@ -15,22 +14,31 @@ export default defineConfig({
     }),
   ],
   resolve: {
-    alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-      "@landing": fileURLToPath(
-        new URL("./src/components/landing", import.meta.url)
-      ),
-      "@bootstrap": fileURLToPath(
-        new URL("./node_modules/bootstrap", import.meta.url)
-      ),
-    },
+    alias: [
+      {
+        find: "@",
+        replacement: fileURLToPath(new URL("./src", import.meta.url)),
+      },
+      {
+        find: "@landing",
+        replacement: fileURLToPath(
+          new URL("./src/components/landing", import.meta.url)
+        ),
+      },
+      {
+        find: "@bootstrap",
+        replacement: fileURLToPath(
+          new URL("./node_modules/bootstrap", import.meta.url)
+        ),
+      },
+    ],
   },
   css: {
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @import "./src/assets/styles/variables.scss";
-          @import "./src/assets/styles/animations.scss";
+          @import "src/assets/styles/variables.scss";
+          @import "src/assets/styles/animations.scss";
           `,
       },
     },

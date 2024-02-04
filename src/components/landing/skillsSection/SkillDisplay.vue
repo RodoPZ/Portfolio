@@ -8,7 +8,7 @@ defineProps(["list", "title"]);
     <div v-for="(item, index) in list" :key="index" class="skillDisplay">
       <img
         class="skillDisplay__img"
-        :src="'@/src/assets/logos/' + item + '.svg'"
+        :src="'./src/assets/logos/' + item + '.svg'"
         :alt="item + ' logo'"
       />
       <p class="skillDisplay__text">{{ item }}</p>
