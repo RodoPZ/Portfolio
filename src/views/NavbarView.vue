@@ -18,7 +18,7 @@ const handleClick = () => {
   <div
     class="navbar d-flex flex-row justify-content-between align-items-center bg-body text-body"
   >
-    <a href="/"><BannerComponent :text="'<RodoPZ/>'" /></a>
+    <a href="/Portfolio"><BannerComponent :text="'<RodoPZ/>'" /></a>
     <div class="desktopMenu">
       <NavLinksComponent />
     </div>
