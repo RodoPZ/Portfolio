@@ -11,6 +11,7 @@ export const techList = [
   "Sass",
   "Bootstrap",
   "React",
+  "Svelte",
   "Rails",
   "Redux",
   "Vue",
